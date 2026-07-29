@@ -13,11 +13,12 @@ configuration:
     - templates
     - .obsidian
   theme:
-    fontOrigin: googleFonts
+    fontOrigin: selfHosted
+    fontPath: fonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Typewriter
+      body: Typewriter
       code: IBM Plex Mono
     colors:
       lightMode:
