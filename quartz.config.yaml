@@ -15,12 +15,12 @@ configuration:
     - .obsidian
 
 theme:
-  fontOrigin: selfHosted
+  fontOrigin: GoogleFonts
   fontPath: fonts
-  typography:
-    header: Typewriter
-    body: Typewriter
-    code: IBM Plex Mono
+typography:
+  header: Courier Prime
+  body: Courier Prime
+  code: IBM Plex Mono
 
 colors:
   lightMode:
