@@ -12,6 +12,11 @@ configuration:
     - private
     - templates
     - .obsidian
+
+    ignore:
+  - .git
+  - .obsidian
+  
  theme:
   fontOrigin: selfHosted
   fontPath: fonts
