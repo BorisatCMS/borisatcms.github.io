@@ -12,14 +12,13 @@ configuration:
     - private
     - templates
     - .obsidian
-  theme:
-    fontOrigin: selfHosted
-    fontPath: fonts
-    cdnCaching: true
-    typography:
-      header: Typewriter
-      body: Typewriter
-      code: IBM Plex Mono
+ theme:
+  fontOrigin: selfHosted
+  fontPath: fonts
+  typography:
+    header: TypewriterSpoolSFTW05-ExXBd
+    body: TypewriterSpoolSFTW05-ExXBd
+    code: IBM Plex Mono
     colors:
       lightMode:
         light: "#faf8f8"
