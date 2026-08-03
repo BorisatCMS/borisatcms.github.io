@@ -50,12 +50,12 @@ plugins:
         - git
         - filesystem
     order: 10
-  - source: github:quartz-community/syntax-highlighting
+  - source: D:\Website\BACKUP2\BACKUP2\.quartz\plugins\quartz-themes\dist\themes
     enabled: true
     options:
       theme:
         light: vitesse-light
-        dark: vitesse-light
+        dark: vitesse-dark
       keepBackground: true
     order: 20
   - source: github:quartz-community/obsidian-flavored-markdown
