@@ -54,8 +54,8 @@ plugins:
     enabled: true
     options:
       theme:
-        light: green-holiday
-        dark: green-holiday
+        light: night-owl
+        dark: night-owl
       keepBackground: true
     order: 20
   - source: github:quartz-community/obsidian-flavored-markdown
