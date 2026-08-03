@@ -56,3 +56,12 @@ $desktopGrid: (
       "grid-sidebar-left grid-center grid-sidebar-right"\
       "grid-sidebar-left grid-footer grid-sidebar-right"',
 );
+```scss title="custom.scss"
+> @font-face {
+>   font-family: "Typewriter";
+>   font-style: normal;
+>   font-weight: normal;
+>   font-display: swap;
+>   src: url("/static/Typewriter.woff2") format("woff2");
+> }
+> ```
