@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Bitter
-      body: Bitter
-      code: Bitter
+      header: Special Elite
+      body: Courier Prime
+      code: IBM Plex Mono
     colors:
       lightMode:
         light: "#faf8f8"
