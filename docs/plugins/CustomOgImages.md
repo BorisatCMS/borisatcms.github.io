@@ -108,11 +108,11 @@ export const myImage: SocialImageOptions["imageStructure"] = (...) => {
 >
 > ```scss title="custom.scss"
 > @font-face {
->   font-family: "Newsreader";
+>   font-family: "Typewriter";
 >   font-style: normal;
 >   font-weight: normal;
 >   font-display: swap;
->   src: url("/static/Newsreader.woff2") format("woff2");
+>   src: url("/static/Typewriter.woff2") format("woff2");
 > }
 > ```
 >
