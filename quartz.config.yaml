@@ -50,14 +50,14 @@ plugins:
         - git
         - filesystem
     order: 10
-  - source: D:\Website\BACKUP2\BACKUP2\.quartz\plugins\quartz-themes\dist\themes
-    enabled: true
-    options:
-      theme:
-        light: vitesse-light
-        dark: vitesse-dark
+  - - source:
+      name: quartz-themes
+      repo: github:saberzero1/quartz-themes
+      enabled: true
+      options:
+       theme: night-owl
       keepBackground: true
-    order: 20
+      order: 20
   - source: github:quartz-community/obsidian-flavored-markdown
     enabled: true
     options:
