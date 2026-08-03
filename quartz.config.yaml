@@ -14,7 +14,7 @@ configuration:
     - .obsidian
   theme:
     fontOrigin: googleFonts
-    cdnCaching: false
+    cdnCaching: true
     typography:
       header: Bitter
       body: Bitter
