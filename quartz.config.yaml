@@ -54,8 +54,8 @@ plugins:
     enabled: true
     options:
       theme:
-        light: night-owl
-        dark: night-owl
+        light: vitesse-light
+        dark: vitesse-light
       keepBackground: true
     order: 20
   - source: github:quartz-community/obsidian-flavored-markdown
