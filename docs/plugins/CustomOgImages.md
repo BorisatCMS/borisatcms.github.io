@@ -108,11 +108,11 @@ export const myImage: SocialImageOptions["imageStructure"] = (...) => {
 >
 > ```scss title="custom.scss"
 > @font-face {
->   font-family: "Typewriter";
+>   font-family: "Newsreader";
 >   font-style: normal;
 >   font-weight: normal;
 >   font-display: swap;
->   src: url("/static/Typewriter.woff2") format("woff2");
+>   src: url("/static/Newsreader.woff2") format("woff2");
 > }
 > ```
 >
@@ -140,7 +140,7 @@ export const myImage: SocialImageOptions["imageStructure"] = (...) => {
 >       style: "normal" as const,
 >     })),
 >     {
->       name: "Typewriter",
+>       name: "Newsreader",
 >       data: await fs.promises.readFile(path.resolve(newsreaderFontPath)),
 >       weight: 400,
 >       style: "normal" as const,
