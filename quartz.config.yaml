@@ -56,7 +56,7 @@ plugins:
       theme:
         light: green-holiday
         dark: green-holiday
-      keepBackground: false
+      keepBackground: true
     order: 20
   - source: github:quartz-community/obsidian-flavored-markdown
     enabled: true
