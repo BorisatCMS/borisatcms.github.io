@@ -140,7 +140,7 @@ export const myImage: SocialImageOptions["imageStructure"] = (...) => {
 >       style: "normal" as const,
 >     })),
 >     {
->       name: "Newsreader",
+>       name: "Typewriter",
 >       data: await fs.promises.readFile(path.resolve(newsreaderFontPath)),
 >       weight: 400,
 >       style: "normal" as const,
