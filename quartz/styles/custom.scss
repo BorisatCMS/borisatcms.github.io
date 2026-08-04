@@ -1,0 +1,48 @@
+@use "./variables.scss" as *;
+
+// Detach the left sidebar (explorer + search) from the page grid entirely and
+// float it as an independent panel anchored to the bottom of the viewport,
+// so it no longer reserves column space or depends on the rest of the layout.
+.page > #quartz-body {
+  grid-template-columns: auto #{$sidePanelWidth};
+  grid-template-areas:
+    "grid-header grid-sidebar-right"
+    "grid-center grid-sidebar-right"
+    "grid-footer grid-sidebar-right";
+
+  @media all and ($tablet) {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+  }
+
+  @media all and ($mobile) {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer";
+  }
+
+  & .sidebar.left {
+    position: fixed;
+    top: auto;
+    left: 1rem;
+    bottom: 1rem;
+    height: auto;
+    max-height: 60vh;
+    width: #{$sidePanelWidth};
+    max-width: calc(100vw - 2rem);
+    z-index: 20;
+    background: var(--light);
+    border: 1px solid var(--lightgray);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+    overflow-y: auto;
+    padding: 1rem;
+  }
+}

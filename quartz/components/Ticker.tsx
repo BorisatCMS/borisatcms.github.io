@@ -25,6 +25,7 @@ Ticker.css = `
   background: #000;
   color: #fff;
   white-space: nowrap;
+  margin: 80px 0;
 }
 
 .ticker-track {
@@ -38,7 +39,7 @@ Ticker.css = `
 }
 
 .ticker-item {
-  padding: 0.5rem 1.5rem 0.5rem 0;
+  padding: 0.3rem 1.5rem 0.3rem 0;
   font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", Menlo, monospace;
   font-size: 0.8rem;
   letter-spacing: 0.02em;

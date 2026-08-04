@@ -1,7 +1,11 @@
 import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
+import { componentRegistry } from "../registry"
+import CardGridConstructor from "../CardGrid"
 
 const Header = HeaderConstructor()
+const CardGrid = CardGridConstructor()
+componentRegistry.register("CardGrid", CardGridConstructor, "core")
 
 /**
  * Full-width page frame — no sidebars. The center content area spans the
@@ -43,6 +47,7 @@ export const FullWidthFrame: PageFrame = {
               <BodyComponent {...componentData} />
             ))}
           </div>
+          <CardGrid {...componentData} />
         </div>
         <Footer {...componentData} />
       </>

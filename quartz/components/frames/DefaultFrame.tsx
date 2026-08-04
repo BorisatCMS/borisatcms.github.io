@@ -1,7 +1,11 @@
 import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
+import { componentRegistry } from "../registry"
+import CardGridConstructor from "../CardGrid"
 
 const Header = HeaderConstructor()
+const CardGrid = CardGridConstructor()
+componentRegistry.register("CardGrid", CardGridConstructor, "core")
 
 /**
  * The default page frame — three-column layout with left sidebar, center
@@ -48,6 +52,7 @@ export const DefaultFrame: PageFrame = {
               <BodyComponent {...componentData} />
             ))}
           </div>
+          <CardGrid {...componentData} />
         </div>
         <div class="right sidebar">
           {right.map((BodyComponent) => (
