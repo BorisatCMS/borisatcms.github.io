@@ -1,12 +1,17 @@
 import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import BodyConstructor from "./Body"
+import { componentRegistry } from "./registry"
+import TickerConstructor from "./Ticker"
 import {
   CSSResource,
   JSResource,
   JSResourceToScriptElement,
   StaticResources,
 } from "../util/resources"
+
+const Ticker = TickerConstructor()
+componentRegistry.register("Ticker", TickerConstructor, "core")
 import { FullSlug, RelativeURL, joinSegments, normalizeHastElement } from "../util/path"
 import { clone } from "../util/clone"
 import { Root, Element, ElementContent } from "hast"
@@ -347,6 +352,7 @@ export function renderPage(
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
       <body data-slug={slug} data-basepath={basePath}>
+        <Ticker {...componentData} />
         {frame.css && <style dangerouslySetInnerHTML={{ __html: frame.css }} />}
         <div id="quartz-root" class="page" data-frame={frame.name}>
           <Body {...componentData}>
