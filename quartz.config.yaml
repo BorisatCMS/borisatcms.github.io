@@ -12,10 +12,6 @@ configuration:
     - private
     - templates
     - .obsidian
-  tickerItems:
-    - digital garden
-    - built with quartz
-    - edit tickerItems in quartz.config.yaml
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
