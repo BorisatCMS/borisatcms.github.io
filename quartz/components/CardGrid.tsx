@@ -2,7 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 
 interface CardSpec {
   title: string
-  issue?: string
+  subhead?: string
   color?: string
   href?: string
 }
@@ -10,7 +10,7 @@ interface CardSpec {
 // Renders as a colorful card grid when the page's frontmatter has a `cards:` list, e.g.:
 //   cards:
 //     - title: Getting Started
-//       issue: "001"
+//       subhead: A short description line
 //       color: "#5b7fb5"
 //       href: /notes/getting-started
 const CardGrid: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
@@ -24,7 +24,7 @@ const CardGrid: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
         const content = (
           <>
             <h2>{card.title}</h2>
-            {card.issue && <p class="card-grid-issue">Issue {card.issue}</p>}
+            {card.subhead && <p class="card-grid-subhead">{card.subhead}</p>}
           </>
         )
         return card.href ? (
@@ -87,12 +87,10 @@ CardGrid.css = `
   line-height: 1.15;
 }
 
-.card-grid-issue {
+.card-grid-subhead {
   margin: 0;
-  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", Menlo, monospace;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  line-height: 1.3;
   opacity: 0.85;
 }
 `

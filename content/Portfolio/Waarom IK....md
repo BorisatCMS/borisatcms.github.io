@@ -1,0 +1,1 @@
+En waarom geluid de helft van de beleving bepaalt.

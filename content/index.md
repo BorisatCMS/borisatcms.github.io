@@ -1,29 +1,38 @@
 ---
 title: Welcome to Quartz
 cards:
-  - title: Getting Started
-    issue: "001"
+  - title: Camera
+    subhead: Momenten op locatie vastleggen
     color: "#649aea"
-    href: https://quartz.jzhao.xyz
-  - title: Notes
-    issue: "002"
+    href: /Portfolio/camera
+  - title: FAQ
+    subhead: Prijs? Samenwerking? Koffie?
     color: "#aab172"
-  - title: Projects
-    issue: "003"
+    href: /Portfolio/faq
+  - title: Motion
+    subhead: De boodschap versterken
     color: "#bf7d1a"
-  - title: About
-    issue: "004"
+    href: /Portfolio/motion
+  - title: Showreel
+    subhead: Wat ik vandaag voor jou kan maken.
     color: "#ad7e95"
-  - title: Resources
-    issue: "005"
+    href: /Portfolio/showreel
+  - title: Sound
+    subhead: Sfeer en beleving creëren
     color: "#eb856f"
-  - title: Archive
-    issue: "006"
+    href: /Portfolio/sound
+  - title: Timeline
+    subhead: Wat is gemaakt sinds 2021
     color: "#e18fa7"
-  - title: Coming Soon
-    issue: "XXX"
-  - title: Coming Soon
-    issue: "XXX"
+    href: /Portfolio/timeline
+  - title: Waarom IK...
+    subhead: En waarom geluid de helft van de beleving bepaalt.
+    color: "#5b9aa0"
+    href: /Portfolio/waarom-ik...
+  - title: Werkwijze
+    subhead: Van scriptwriting tot het filmen en editen.
+    color: "#d1a13a"
+    href: /Portfolio/werkwijze
 ---
 
 This is a blank Quartz installation.
