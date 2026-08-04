@@ -20,9 +20,11 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Bitter
-      body: Bitter
-      code: Bitter
+      header:
+        name: Amatic SC
+        weights: [700]
+      body: Courier Prime
+      code: Courier Prime
     colors:
       lightMode:
         light: "#F4DED3"
@@ -30,20 +32,20 @@ configuration:
         gray: "#5B5853"
         darkgray: "#2B2420"
         dark: "#1A1512"
-        secondary: "#AE4E0D"
+        secondary: "#464473"
         tertiary: "#464473"
-        highlight: rgba(174, 78, 13, 0.12)
-        textHighlight: "#AE4E0D40"
+        highlight: rgba(70, 68, 115, 0.12)
+        textHighlight: "#46447340"
       darkMode:
         light: "#0B212C"
         lightgray: "#1C3742"
-        gray: "#5B5853"
+        gray: "#A4A7AC"
         darkgray: "#F4DED3"
         dark: "#FBEFE8"
-        secondary: "#AE4E0D"
-        tertiary: "#464473"
-        highlight: rgba(174, 78, 13, 0.18)
-        textHighlight: "#AE4E0D40"
+        secondary: "#8E92B8"
+        tertiary: "#8E92B8"
+        highlight: rgba(142, 146, 184, 0.18)
+        textHighlight: "#8E92B840"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -115,9 +117,11 @@ plugins:
   - source: github:quartz-community/fonts
     enabled: true
     options:
-      header: Bitter
-      body: Bitter
-      code: Bitter
+      header:
+        name: Amatic SC
+        weights: [700]
+      body: Courier Prime
+      code: Courier Prime
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish

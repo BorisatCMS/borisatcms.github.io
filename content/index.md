@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Boris at CMS
 cards:
   - title: Waarom IK...
     subhead: En waarom geluid de helft van de beleving bepaalt.
@@ -33,7 +33,6 @@ cards:
     subhead: Prijs? Samenwerking? Koffie?
     color: "#aab172"
     href: /portfolio/faq
-
 ---
 
 This is a blank Quartz installation.

@@ -59,7 +59,11 @@ CardGrid.css = `
   --card-color: var(--gray);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /* Text sits at the bottom, leaving the space above free for an
+     illustration (e.g. an <img> added before the title/subhead here). */
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
   gap: 0.5rem;
   aspect-ratio: 3 / 4;
   padding: 1.25rem;
@@ -83,13 +87,13 @@ CardGrid.css = `
 
 .card-grid-item h2 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   line-height: 1.15;
 }
 
 .card-grid-subhead {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.3;
   opacity: 0.85;
 }

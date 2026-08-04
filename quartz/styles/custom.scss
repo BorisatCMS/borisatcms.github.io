@@ -1,5 +1,58 @@
 @use "./variables.scss" as *;
 
+// Bump the base font size site-wide (scales every rem-based size) and center
+// all text in the main content column.
+html {
+  font-size: 19px;
+}
+
+.center article,
+.center .page-header,
+.center .page-footer {
+  text-align: center;
+}
+
+// The page headline. Margin reset + tight line-height to cut the empty
+// space the display font's own leading leaves above/below the glyphs.
+.article-title {
+  font-size: 200px;
+  line-height: 0.85;
+  margin: 0;
+}
+
+.page-header header {
+  margin: 0.5rem 0;
+}
+
+// Headings ("head text") get a fixed accent color, independent of theme/mode.
+// Card titles stay white via the more specific .card-grid-item h2 rule below.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ae4e0d;
+}
+
+// Footer: keep the "Created with Quartz © year" text and the link list on a
+// single row instead of stacking them (they're separate block elements by
+// default).
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 1rem;
+}
+
+footer p,
+footer ul {
+  margin: 0;
+}
+
 // The page shell has its own background shade distinct from <body>, which
 // shows as a visible "dead" band in the outer margin on wide viewports.
 // Make it transparent so it blends with the page background instead.
@@ -29,6 +82,13 @@
 .card-grid-item h2,
 .card-grid-item .card-grid-subhead {
   color: #fff;
+}
+
+// The site-wide Fonts plugin injects unlayered `h2 { font-family: ... }`
+// rules that beat any layered/component-scoped override, so the header/body
+// font split has to be undone here specifically for card titles.
+.card-grid-item h2 {
+  font-family: var(--bodyFont);
 }
 
 // Detach the left sidebar (explorer + search) from the page grid entirely and

@@ -2,10 +2,13 @@ import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
 import { componentRegistry } from "../registry"
 import CardGridConstructor from "../CardGrid"
+import SocialLinksConstructor from "../SocialLinks"
 
 const Header = HeaderConstructor()
 const CardGrid = CardGridConstructor()
+const SocialLinks = SocialLinksConstructor()
 componentRegistry.register("CardGrid", CardGridConstructor, "core")
+componentRegistry.register("SocialLinks", SocialLinksConstructor, "core")
 
 /**
  * The default page frame — three-column layout with left sidebar, center
@@ -60,6 +63,7 @@ export const DefaultFrame: PageFrame = {
           ))}
         </div>
         <Footer {...componentData} />
+        <SocialLinks {...componentData} />
       </>
     )
   },

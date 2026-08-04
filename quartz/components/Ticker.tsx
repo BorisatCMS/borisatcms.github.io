@@ -25,7 +25,7 @@ Ticker.css = `
   background: #000;
   color: #fff;
   white-space: nowrap;
-  margin: 0 0 200px 0;
+  margin: 0;
 }
 
 .ticker-track {
