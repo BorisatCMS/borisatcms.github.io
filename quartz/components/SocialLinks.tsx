@@ -30,7 +30,6 @@ const LINKS = [
     href: "https://linkedin.com",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8" />
         <text
           x="12"
           y="16"
@@ -51,7 +50,7 @@ const SocialLinks: QuartzComponent = (_props: QuartzComponentProps) => {
     <div class="social-links">
       {LINKS.map((link) => (
         <a
-          class="social-links-icon"
+          class={`social-links-icon${link.name === "LinkedIn" ? " social-links-icon-linkedin" : ""}`}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
@@ -97,6 +96,18 @@ SocialLinks.css = `
 .social-links-icon svg {
   width: 1.2rem;
   height: 1.2rem;
+}
+
+.social-links-icon-linkedin svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* base.scss has a global rule targeting the literal <text> tag (for math/
+   typst rendering) that sets fill: var(--darkgray), which beats this icon's
+   fill="currentColor" and makes it shift with light/dark mode. Pin it. */
+.social-links-icon-linkedin svg text {
+  fill: #fff;
 }
 `
 

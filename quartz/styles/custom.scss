@@ -119,40 +119,107 @@ footer ul {
       "grid-footer";
   }
 
-  // Collapsed to a small corner button by default so it can never sit on top
-  // of page content; expands to the full explorer/search panel on hover or
-  // keyboard focus, then collapses again once the pointer/focus leaves.
+  // Only search + darkmode remain in this group now — a simple row of two
+  // small round buttons floating at the bottom, independent of page content.
   & .sidebar.left {
     position: fixed;
     top: auto;
     left: 1rem;
     bottom: 1rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    max-width: 3.5rem;
-    max-height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    width: auto;
+    height: auto;
     z-index: 20;
-    background: var(--light);
-    border: 1px solid var(--lightgray);
-    border-radius: 50%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
-    overflow: hidden;
-    padding: 0.75rem;
-    transition:
-      width 0.15s ease,
-      height 0.15s ease,
-      max-width 0.15s ease,
-      max-height 0.15s ease,
-      border-radius 0.15s ease;
   }
 
-  & .sidebar.left:hover,
-  & .sidebar.left:focus-within {
-    width: #{$sidePanelWidth};
-    height: auto;
-    max-width: calc(100vw - 2rem);
-    max-height: 60vh;
-    border-radius: 0.5rem;
-    overflow-y: auto;
+  & .sidebar.left .search-button,
+  & .sidebar.left button.darkmode {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--tertiary);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
   }
+
+  // Hide the plugins' own icons — replaced with badge-style icons below that
+  // match the YouTube/Instagram/LinkedIn treatment (same rounded-square
+  // outline, same stroke weight).
+  & .sidebar.left .search-button svg,
+  & .sidebar.left button.darkmode svg {
+    display: none;
+  }
+
+  // No badge/border here (unlike the social icons) — just the bare glyph,
+  // sized up to be clearly visible without an outline.
+  & .sidebar.left .search-button::before,
+  & .sidebar.left button.darkmode::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem 2rem;
+  }
+}
+
+.sidebar.left .search-button::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='10.5' cy='10.5' r='4.5' fill='none' stroke='white' stroke-width='1.8'/%3E%3Cline x1='13.7' y1='13.7' x2='18' y2='18' stroke='white' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+// Sun (light mode) / moon (dark mode), matching the existing [saved-theme]
+// toggle the darkmode plugin already uses.
+:root .sidebar.left button.darkmode::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='3.4' fill='none' stroke='white' stroke-width='1.6'/%3E%3Cline x1='12' y1='5.5' x2='12' y2='7.2' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3Cline x1='12' y1='16.8' x2='12' y2='18.5' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3Cline x1='5.5' y1='12' x2='7.2' y2='12' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3Cline x1='16.8' y1='12' x2='18.5' y2='12' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+:root[saved-theme="dark"] .sidebar.left button.darkmode::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' fill='white' d='M6.5,12 A5.5,5.5 0 1,0 17.5,12 A5.5,5.5 0 1,0 6.5,12 Z M9.5,9.7 A4.5,4.5 0 1,0 20,9.7 A4.5,4.5 0 1,0 9.5,9.7 Z'/%3E%3C/svg%3E");
+}
+
+// Icon-only: hide the "Search" text label next to the magnifying glass.
+.sidebar.left .search-button p {
+  display: none;
+}
+
+// The search modal overlay defaults to pinning its input box near the top of
+// the screen (margin-top: 12vh) — flip it to the bottom instead.
+.search > .search-container.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.search > .search-container > .search-space {
+  margin-top: 0;
+  margin-bottom: 12vh;
+}
+
+// Results normally render in normal flow below the input, so the input (and
+// the whole box, now bottom-anchored) jumps/shifts position the moment
+// results appear or change size while typing. Stack results above the input
+// instead — they grow upward, the input itself never moves.
+.search > .search-container > .search-space > .search-layout {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-bottom: 0.5rem;
+}
+
+// Search result titles inherit the site-wide "head text" styling (Amatic SC,
+// orange) via the global h1-h6 rule — carve out an exception here, matching
+// the body font and the gray that already flips between modes (dark mode:
+// light gray; light mode: dark gray).
+.result-card > h3 {
+  font-family: var(--bodyFont);
+  color: var(--gray);
 }

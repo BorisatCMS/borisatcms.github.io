@@ -35,5 +35,4 @@ cards:
     href: /portfolio/faq
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Camera. Motion. Sound. 5 jaar ervaring.

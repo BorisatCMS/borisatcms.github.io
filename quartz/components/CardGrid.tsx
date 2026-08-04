@@ -59,13 +59,13 @@ CardGrid.css = `
   --card-color: var(--gray);
   display: flex;
   flex-direction: column;
-  /* Text sits at the bottom, leaving the space above free for an
-     illustration (e.g. an <img> added before the title/subhead here). */
-  justify-content: flex-end;
+  /* Text sits at the top, leaving the space below free for an
+     illustration (e.g. an <img> added after the title/subhead here). */
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   gap: 0.5rem;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   padding: 1.25rem;
   border-radius: 0.5rem;
   background-color: var(--card-color);
