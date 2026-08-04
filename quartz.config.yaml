@@ -25,25 +25,25 @@ configuration:
       code: Bitter
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#F4DED3"
+        lightgray: "#E6CBBC"
+        gray: "#5B5853"
+        darkgray: "#2B2420"
+        dark: "#1A1512"
+        secondary: "#AE4E0D"
+        tertiary: "#464473"
+        highlight: rgba(174, 78, 13, 0.12)
+        textHighlight: "#AE4E0D40"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#0B212C"
+        lightgray: "#1C3742"
+        gray: "#5B5853"
+        darkgray: "#F4DED3"
+        dark: "#FBEFE8"
+        secondary: "#AE4E0D"
+        tertiary: "#464473"
+        highlight: rgba(174, 78, 13, 0.18)
+        textHighlight: "#AE4E0D40"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -270,9 +270,9 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
-      theme: default
+      theme: dekurai
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:

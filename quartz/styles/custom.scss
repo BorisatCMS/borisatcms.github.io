@@ -22,6 +22,15 @@
     "grid-footer";
 }
 
+// The card grid's title/subhead text picks up the active theme's generic
+// `p`/heading text color otherwise, so it shifts (and can go unreadable)
+// when switching dark/light mode or site theme. Pin it to a fixed white.
+.card-grid-item,
+.card-grid-item h2,
+.card-grid-item .card-grid-subhead {
+  color: #fff;
+}
+
 // Detach the left sidebar (explorer + search) from the page grid entirely and
 // float it as an independent panel anchored to the bottom of the viewport,
 // so it no longer reserves column space or depends on the rest of the layout.
