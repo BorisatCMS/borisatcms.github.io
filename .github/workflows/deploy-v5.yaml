@@ -33,7 +33,7 @@ jobs:
         run: npx quartz plugin install
 
       - name: Build Quartz
-        run: npx quartz build -d docs
+        run: npx quartz build -d content
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
