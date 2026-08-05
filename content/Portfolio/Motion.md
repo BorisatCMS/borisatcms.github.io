@@ -18,7 +18,7 @@ Photoshop
 
 After Effects
 РЕКЛАМА ИНТЕНСИВА...
-
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/1215723885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
 
 
@@ -39,3 +39,4 @@ MOTION
 
 An example of a good selfpresentation for the MBO-4 "AV Specialist" program.
 De zelfpresentatie
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/1215730864?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
