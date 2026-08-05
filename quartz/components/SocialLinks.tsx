@@ -6,7 +6,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 const LINKS = [
   {
     name: "YouTube",
-    href: "https://youtube.com",
+    href: "https://www.youtube.com/@Boris-at-CMS/videos",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8" />
@@ -16,7 +16,7 @@ const LINKS = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/boris_at_cms/",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8" />
@@ -27,7 +27,7 @@ const LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/borys-popov-253bb1352/",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <text
