@@ -1,3 +1,5 @@
+2021
+
 
 2022
 
@@ -33,7 +35,6 @@ After Effects
 
 
 
-
 CAMERA
 
 
@@ -52,7 +53,6 @@ SOUND
 CAMERA (still my phone)
 The begin of the year
 Circus
-
 
 
 
