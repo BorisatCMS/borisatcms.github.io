@@ -62,5 +62,12 @@ Hier is een voorbeeld hoe ik me heb gepresenteerd.
 
 
 
-SOUND
-5.1 OPDRACHT
+2025
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2NqBLYXCJso?si=Nt0VdioQb9GufiNN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+2026
+
+
+https://www.tiktok.com/@boris_at_cms/video/7640736773974347041
