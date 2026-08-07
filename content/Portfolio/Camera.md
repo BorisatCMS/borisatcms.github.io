@@ -6,8 +6,8 @@ Circus
 
 Что
 
+Zelfportret
 
-CAMERA
 
 Difference between millimeters
 LENZEN
