@@ -1,24 +1,6 @@
+Zelfportret 2025
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mf7bUf-tfbE?si=ciNOqGQ5okR__kBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-CAMERA (still my phone)
-The begin of the year
-Circus
-
-Что
-
-Zelfportret
-
-
-Difference between millimeters
-LENZEN
-
-
-
-CAMERA
-
-Five basic shots everyone should make.
-BASIS SHOTS
-А Gijs что?
 
 
 

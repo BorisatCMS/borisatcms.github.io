@@ -5,8 +5,7 @@ Spoiler: de afgelopen twee jaar bestaat mijn belangrijkste werk uit een combinat
 
 Met name van Boris at CMS, toon ik op de bovenstaande pagina’s graag wat elk aspect precies inhoudt.
 
-
-2021 
+2021 - Eigen weg gekozen
 11 augustus - Van alle ICT-richtingen bleef één vakgebied steeds terugkomen: editen.
 Daar ontdekte ik dat ik techniek niet alleen wil begrijpen, maar ook wil gebruiken om verhalen te vertellen. Begin van [[Motion]]:
 
@@ -24,16 +23,21 @@ Eerste deelname aan de wedstrijd — niet gewonnen.
 
 
 2022
+Onderbreking - het beste jaar ooit - 2019
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/1216391673?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
 Januari - Tweede deelname aan de wedstrijd — weer niet gewonnen.
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215757940?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
-Begin van [[Sound]]
+1 maart - Begin van [[Sound]]
 In die tijd heb ik gehoord dat het verschil tussen amateur- en professionele video's in Sound Design zit.
 Het houdt in dat geluid en muziek het eindproduct levendiger maken.
 
 Dankzij een lokale muziekschool waar ik piano leerde te spelen, is er mogelijkheid verschenen om samen te werken in de media sfeer.
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215739650?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+
+De opdracht: een geloofwaardige geluidswereld creëren voor het footage.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dpQBnqdiZPc?si=NuTuL8-bPTrlNota" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
@@ -42,50 +46,19 @@ We mochten dit jaar beginnen met circus als deel van de Schakelcollege Tilburg a
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1216402268?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
 
-**SOUND-DESIGN**
-
-
-After Effects template editing
-Final
-
-
-SOUND
-Experiments with water
-Mask Matte
-
-
-2024
-
-
-CAMERA
-
-Difference between millimeters
-LENZEN
-
-MOTION
-
-An example of a good selfpresentation for the MBO-4 "AV Specialist" program.
-De zelfpresentatie
-
-
-SOUND
-
-De 5 opdrachten
-
-2025
-Showreel 2025 - the best of this year
-SHOWREEL 2024 2025
+Onderbreking - even chillen, geluid aan en gaan:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yXEqz3Cba1c?si=PQ-ahwt5tSAH8HGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
+2024 - Nogmaals eigen weg kiezen.
 
-CAMERA
+Net als in 2021 stond ik ook dit jaar met een keuze van verschillende beroepsopleidingen.
+Toen dacht ik: ik wil graag meer universeel worden in de mediasfeer en verder verdiepen in wat ik al in huis heb.
 
-Five basic shots everyone should make.
-BASIS SHOTS
-
-
-MOTION
+Mijn keuze was op de MBO-4 opleiding tot AV-specialist gevallen.
+Hier is een voorbeeld hoe ik me heb gepresenteerd.
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/1215730864?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
 
 
