@@ -29,12 +29,18 @@ function renderVisitHistory() {
 
   const currentPath = window.location.pathname;
   const currentTitle = document.title;
+  const isHome = currentPath === "/";
 
-  const trail = readTrail();
-  const displayTrail = trail.filter((item) => item.path !== currentPath);
+  // Landing on the homepage always resets the trail — history starts fresh
+  // from there, so nothing shows on the homepage itself either.
+  const storedTrail = isHome ? [] : readTrail();
+
+  // Drop any existing entry for the current page so pages never repeat in
+  // the trail (a revisited page moves to the end instead of duplicating).
+  const trail = storedTrail.filter((item) => item.path !== currentPath);
 
   container.innerHTML = "";
-  displayTrail.forEach((item, i) => {
+  trail.forEach((item, i) => {
     if (i > 0) {
       const arrow = document.createElement("span");
       arrow.className = "visit-history-arrow";
@@ -48,10 +54,8 @@ function renderVisitHistory() {
     container.appendChild(a);
   });
 
-  if (trail.length === 0 || trail[trail.length - 1].path !== currentPath) {
-    trail.push({ path: currentPath, title: currentTitle });
-    writeTrail(trail);
-  }
+  trail.push({ path: currentPath, title: currentTitle });
+  writeTrail(trail);
 }
 
 document.addEventListener("nav", renderVisitHistory);
