@@ -65,4 +65,5 @@ Hier is een voorbeeld hoe ik me heb gepresenteerd.
 ## **2026**
 **17 mei - 800+ likes en 10K+ views on TikTok in 7 dagen**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/CzPgFTLxoqA?si=x9d2q2DPpAw_RRgF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-https://www.tiktok.com/@boris_at_cms/video/7640736773974347041
+
+[www.tiktok.com/@boris_at_cms/video/7640736773974347041](https://www.tiktok.com/@boris_at_cms/video/7640736773974347041)

@@ -5,16 +5,19 @@ import CardGridConstructor from "../CardGrid"
 import SocialLinksConstructor from "../SocialLinks"
 import ContentMetaConstructor from "../ContentMeta"
 import VisitHistoryConstructor from "../VisitHistory"
+import TocToggleConstructor from "../TocToggle"
 
 const Header = HeaderConstructor()
 const CardGrid = CardGridConstructor()
 const SocialLinks = SocialLinksConstructor()
 const ContentMeta = ContentMetaConstructor()
 const VisitHistory = VisitHistoryConstructor()
+const TocToggle = TocToggleConstructor()
 componentRegistry.register("CardGrid", CardGridConstructor, "core")
 componentRegistry.register("SocialLinks", SocialLinksConstructor, "core")
 componentRegistry.register("ContentMeta", ContentMetaConstructor, "core")
 componentRegistry.register("VisitHistory", VisitHistoryConstructor, "core")
+componentRegistry.register("TocToggle", TocToggleConstructor, "core")
 
 /**
  * The default page frame — three-column layout with left sidebar, center
@@ -40,6 +43,7 @@ export const DefaultFrame: PageFrame = {
           {left.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}
+          <TocToggle {...componentData} />
         </div>
         <div class="center">
           <div class="page-header">

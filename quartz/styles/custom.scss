@@ -25,7 +25,7 @@ html {
 // down. Shrink it so it fits in at most 1-2 lines instead.
 @media all and ($mobile) {
   .article-title {
-    font-size: 70px;
+    font-size: 140px;
   }
 }
 
@@ -42,6 +42,23 @@ h4,
 h5,
 h6 {
   color: #ae4e0d;
+}
+
+// Sub-headings ("secondary" text like the Timeline's 2021/2022/2023 section
+// markers, and the Table of Contents entries built from them) switch to the
+// body font instead of the decorative Amatic SC used for the big h1 title —
+// keeps the orange color, just easier to read at small/medium sizes. Applies
+// site-wide, not just Timeline.
+// (More specific than a bare `h2` etc. — the Fonts plugin's own unlayered
+// h2-h6 rule loads after this stylesheet, so it wins at equal specificity;
+// scoping to .center/.toc beats it regardless of load order.)
+.center h2,
+.center h3,
+.center h4,
+.center h5,
+.center h6,
+.toc h3 {
+  font-family: var(--bodyFont);
 }
 
 // Footer: keep the "Created with Quartz © year" text and the link list on a
@@ -259,4 +276,52 @@ footer ul {
 // Add another line like this here if more vertical videos get added later.
 .center article iframe[src*="1215754141"] {
   aspect-ratio: 9 / 16;
+}
+
+// Table of Contents entries: same orange as the headings they link to,
+// instead of the plugin's default var(--dark) (opacity still applies for
+// the dim/highlighted in-view states) — and a touch smaller.
+.toc-content.overflow > li > a {
+  color: #ae4e0d;
+  font-size: 0.85rem;
+}
+
+// Headings get a small "#" permalink icon appended (for deep-linking) — fine
+// inside the Table of Contents, but shouldn't show as a clickable link in
+// the article body itself.
+.center article a[role="anchor"] {
+  display: none;
+}
+
+// The right sidebar (Table of Contents) inherited the same generous
+// 6rem-top/2rem-side padding as the old left sidebar — shrink it so it
+// doesn't take up as much space.
+.sidebar.right {
+  padding: 2rem 1.5rem;
+}
+
+// Table of Contents is hidden by default on mobile (opened via the hamburger
+// button next to search/darkmode instead) — shown as a full-screen overlay
+// with the same background blur as the search modal.
+@media all and ($mobile) {
+  .sidebar.right {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .sidebar.right.toc-open {
+    display: block;
+  }
+
+  // The hamburger button itself only makes sense on mobile — desktop/tablet
+  // already show the Table of Contents in the sidebar directly.
+  .toc-toggle-button {
+    display: flex;
+  }
 }
