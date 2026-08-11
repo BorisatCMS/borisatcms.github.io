@@ -5,13 +5,18 @@ title: FAQ
 <div class="faq-list">
 
 <details>
-<summary>Waarom ben ik 18?</summary>
-<p>Wie zegt dat jij 18 bent?</p>
+<summary>Welke diensten biedt u?</summary>
+<p>Ik bied animaties, geluidsontwerp, creatieve ideeën en positieve samenwerking. Combinatie mogelijk</p>
 </details>
 
 <details>
-<summary>Gebruik je 67?</summary>
-<p>Heel onslim van je.</p>
+<summary>In welke programma's bewerkt u video's?</summary>
+<p>Voor animaties - After Effects, voor gefilmd content - Premiere Pro/Davinci Resolve, voor het nabewerken van foto's - Photoshop.</p>
+</details>
+
+<details>
+<summary>Coming soon</summary>
+<p>Afhankelijk hoe vaak de vraag wordt gesteld.</p>
 </details>
 
 </div>
