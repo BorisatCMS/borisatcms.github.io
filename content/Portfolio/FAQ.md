@@ -18,7 +18,10 @@ title: FAQ
 
 <p class="section-label">Contact</p>
 
-<form id="contact-form" class="contact-form">
+<form id="contact-form" class="contact-form" action="https://formspree.io/f/xeajgpvp" method="POST">
+  <input type="hidden" name="_next" value="https://beaverstudio2007.github.io/portfolio/bedankt" />
+  <input type="hidden" name="_subject" value="Nieuwe contactaanvraag" />
+  <input type="hidden" name="_autoresponse" value="Hartstikke bedankt voor uw initiatief! Meestal beantwoord ik uw formulier in 2 uur (in werkdagen)." />
   <input type="text" name="name" placeholder="Naam" />
   <input type="email" name="email" placeholder="E-mail" required />
   <input type="tel" name="phone" placeholder="Telefoonnummer" />
@@ -78,26 +81,3 @@ title: FAQ
   cursor: pointer;
 }
 </style>
-
-<script>
-(function () {
-  var form = document.getElementById("contact-form");
-  if (!form || form.dataset.wired) return;
-  form.dataset.wired = "true";
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var name = form.name.value;
-    var email = form.email.value;
-    var phone = form.phone.value;
-    var message = form.message.value;
-    var subject = encodeURIComponent("Contactaanvraag van " + (name || email));
-    var body = encodeURIComponent(
-      "Naam: " + name + "\nE-mail: " + email + "\nTelefoon: " + phone + "\n\n" + message
-    );
-    window.location.href = "mailto:berchon010@gmail.com?subject=" + subject + "&body=" + body;
-    setTimeout(function () {
-      window.location.href = "/Portfolio/bedankt";
-    }, 400);
-  });
-})();
-</script>
