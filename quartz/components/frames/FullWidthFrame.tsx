@@ -4,14 +4,17 @@ import { componentRegistry } from "../registry"
 import CardGridConstructor from "../CardGrid"
 import SocialLinksConstructor from "../SocialLinks"
 import ContentMetaConstructor from "../ContentMeta"
+import VisitHistoryConstructor from "../VisitHistory"
 
 const Header = HeaderConstructor()
 const CardGrid = CardGridConstructor()
 const SocialLinks = SocialLinksConstructor()
 const ContentMeta = ContentMetaConstructor()
+const VisitHistory = VisitHistoryConstructor()
 componentRegistry.register("CardGrid", CardGridConstructor, "core")
 componentRegistry.register("SocialLinks", SocialLinksConstructor, "core")
 componentRegistry.register("ContentMeta", ContentMetaConstructor, "core")
+componentRegistry.register("VisitHistory", VisitHistoryConstructor, "core")
 
 /**
  * Full-width page frame — no sidebars. The center content area spans the
@@ -41,6 +44,7 @@ export const FullWidthFrame: PageFrame = {
               ))}
             </Header>
             <div class="popover-hint">
+              <VisitHistory {...componentData} />
               {beforeBody.map((BodyComponent) => (
                 <BodyComponent {...componentData} />
               ))}
