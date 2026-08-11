@@ -1,6 +1,6 @@
-Met **Sound** kan ik bepalen waar de aandacht van de kijker naartoe gaat en hoe een moment wordt ervaren. Een geluidseffect kan een bepaalde beweging of gebeurtenis benadrukken, terwijl muziek en ambience de sfeer van een scène bepalen.
+🔊 Met **Sound** kan ik bepalen waar de aandacht van de kijker naartoe gaat en hoe een moment wordt ervaren. Een geluidseffect kan een bepaalde **beweging of gebeurtenis benadrukken**, terwijl muziek en ambience de sfeer van een scène bepalen.
 
-Door geluid bewust te combineren met het beeld, wordt een video niet alleen duidelijker, maar ook prettiger en interessanter om naar te kijken. Sound kan daardoor een scène geloofwaardiger maken, emotie versterken en de aandacht precies op het juiste moment sturen.
+Door geluid bewust te combineren met het beeld, wordt een video **niet alleen duidelijker**, maar ook **prettiger en interessanter** om naar te kijken. Sound kan daardoor een scène geloofwaardiger maken, emotie versterken en de **aandacht precies op het juiste moment** sturen.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/dpQBnqdiZPc?si=JX2ajmrt4jAoTRLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

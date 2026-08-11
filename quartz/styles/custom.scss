@@ -12,6 +12,61 @@ html {
   text-align: center;
 }
 
+// Foldable question/answer sections (FAQ-style accordions using the native
+// <details>/<summary> pattern — no JS needed for the fold/unfold itself).
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 32rem;
+  margin: 1.5rem auto;
+  text-align: left;
+}
+
+.faq-list details {
+  border: 1px solid var(--lightgray);
+  border-radius: 0.5rem;
+  padding: 0.85rem 1.1rem;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-family: var(--bodyFont);
+  font-weight: 600;
+  color: #ae4e0d;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.15s ease;
+}
+
+.faq-list details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.faq-list details p {
+  margin: 0.6rem 0 0 0;
+  color: var(--darkgray);
+}
+
+// A prominent, section-heading-*looking* label that isn't an actual h1-h6 —
+// so it doesn't get pulled into the Table of Contents.
+.section-label {
+  font-family: var(--bodyFont);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ae4e0d;
+  margin: 2rem 0 0 0;
+}
+
 // The page headline. Margin reset + tight line-height to cut the empty
 // space the display font's own leading leaves above/below the glyphs.
 .article-title {
@@ -339,10 +394,20 @@ footer ul {
   }
 
   // base.scss hides .toc itself (not just the sidebar) below desktop width —
-  // undo that specifically when the overlay is open.
+  // undo that specifically when the overlay is open. Also give it the same
+  // floating "card" treatment as the search modal's box (search.scss's
+  // .search-space > * rule) — a raised panel on top of the blur, not content
+  // sitting directly against it.
   .sidebar.right.toc-open .toc {
     display: flex;
     flex-direction: column;
+    background: var(--light);
+    border-radius: 7px;
+    box-shadow:
+      0 14px 50px rgba(27, 33, 48, 0.12),
+      0 10px 30px rgba(27, 33, 48, 0.16);
+    padding: 1.25rem 1.5rem;
+    margin-top: 2rem;
   }
 
   // The hamburger button itself only makes sense on mobile — desktop/tablet

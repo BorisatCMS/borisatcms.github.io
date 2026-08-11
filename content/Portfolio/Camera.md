@@ -1,5 +1,5 @@
-Met **Camera** leg ik vast wat er op locatie gebeurt en geef ik de kijker een beeld van de situatie, afhankelijk van het type video.
-Ik kijk daarbij naar wat er in beeld moet komen, vanuit welke hoek en op welk moment, zodat het beeld het verhaal ondersteunt.
+📸 Met **Camera** leg ik vast wat er op locatie gebeurt en geef ik de kijker **een beeld van de situatie**, afhankelijk van het type video.
+Ik kijk daarbij naar **wat er in beeld moet komen**, vanuit welke **hoek** en op welk **moment**, zodat het beeld het verhaal ondersteunt.
 **Denkt u aan documentaires, aftermovies, monologen etc, zoals hieronder:**
 
 

@@ -3,13 +3,39 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 // Fallback text if `tickerItems` isn't set under `configuration:` in quartz.config.yaml.
 const DEFAULT_ITEMS = ["edit tickerItems in quartz.config.yaml", "digital garden", "notes"]
 
+// On wide screens, two copies of the text don't cover the full width, so once
+// both scroll past there's a visible gap before the loop restarts. This
+// measures the actual rendered width client-side and adds as many more
+// (always an even number, so the -50% loop point still lands on a copy
+// boundary) as needed to guarantee text is on screen at all times.
+const script = `
+function setupTicker() {
+  const track = document.getElementById("ticker-track");
+  if (!track) return;
+  const items = track.querySelectorAll(".ticker-item");
+  if (items.length === 0) return;
+  const singleWidth = items[0].getBoundingClientRect().width;
+  if (singleWidth === 0) return;
+  const neededPerHalf = Math.max(1, Math.ceil(window.innerWidth / singleWidth));
+  const totalNeeded = Math.min(neededPerHalf * 2, 60);
+  if (items.length >= totalNeeded) return;
+  const html = items[0].outerHTML;
+  for (let i = items.length; i < totalNeeded; i++) {
+    track.insertAdjacentHTML("beforeend", html);
+  }
+}
+document.addEventListener("nav", setupTicker);
+document.addEventListener("render", setupTicker);
+window.addEventListener("resize", setupTicker);
+`
+
 const Ticker: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
   const items = (cfg as { tickerItems?: string[] }).tickerItems ?? DEFAULT_ITEMS
   const text = items.join("   •   ")
 
   return (
     <div class="ticker">
-      <div class="ticker-track">
+      <div class="ticker-track" id="ticker-track">
         <span class="ticker-item">{text}</span>
         <span class="ticker-item" aria-hidden="true">
           {text}
@@ -18,6 +44,8 @@ const Ticker: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
     </div>
   )
 }
+
+Ticker.afterDOMLoaded = script
 
 Ticker.css = `
 .ticker {
