@@ -99,6 +99,27 @@ h6 {
   color: #ae4e0d;
 }
 
+// Werkwijze page: headings stay the normal body text color instead of
+// orange, and no Table of Contents (its 6 step headings would otherwise
+// populate one).
+body[data-slug="portfolio/werkwijze"] h2,
+body[data-slug="portfolio/werkwijze"] h3,
+body[data-slug="portfolio/werkwijze"] h4 {
+  color: var(--darkgray);
+}
+
+body[data-slug="portfolio/werkwijze"] .sidebar.right {
+  display: none;
+}
+
+body[data-slug="portfolio/werkwijze"] .page > #quartz-body {
+  grid-template-columns: auto;
+  grid-template-areas:
+    "grid-header"
+    "grid-center"
+    "grid-footer";
+}
+
 // Sub-headings ("secondary" text like the Timeline's 2021/2022/2023 section
 // markers, and the Table of Contents entries built from them) switch to the
 // body font instead of the decorative Amatic SC used for the big h1 title —

@@ -23,9 +23,9 @@ title: FAQ
   <input type="hidden" name="_subject" value="Nieuwe contactaanvraag" />
   <input type="hidden" name="_autoresponse" value="Hartstikke bedankt voor uw initiatief! Meestal beantwoord ik uw formulier in 2 uur (in werkdagen)." />
   <input type="text" name="name" placeholder="Naam" />
-  <input type="email" name="email" placeholder="E-mail" required />
+  <input type="email" name="email" placeholder="E-mail*" required />
   <input type="tel" name="phone" placeholder="Telefoonnummer" />
-  <textarea name="message" placeholder="Waar kunnen we je mee helpen?" rows="5" required></textarea>
+  <textarea name="message" placeholder="Waar kunnen we je mee helpen?*" rows="5" required></textarea>
   <label class="contact-form-checkbox">
     <input type="checkbox" name="privacy" required />
     <span>Ik ga akkoord met de <a href="/Portfolio/privacyverklaring">privacyverklaring</a></span>

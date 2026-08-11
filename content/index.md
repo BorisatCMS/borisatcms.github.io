@@ -28,7 +28,7 @@ cards:
   - title: Showreel
     subhead: Wat ik vandaag voor jou kan maken.
     color: "#ad7e95"
-    href: /portfolio/showreel
+    href: /portfolio/showreels
   - title: FAQ
     subhead: Prijs? Samenwerking? Koffie?
     color: "#aab172"
