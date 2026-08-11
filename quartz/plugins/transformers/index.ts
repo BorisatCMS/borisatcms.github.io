@@ -1,1 +1,1 @@
-export {}
+export { VideoReadingTime } from "./videoTime"

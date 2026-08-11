@@ -3,12 +3,15 @@ import HeaderConstructor from "../Header"
 import { componentRegistry } from "../registry"
 import CardGridConstructor from "../CardGrid"
 import SocialLinksConstructor from "../SocialLinks"
+import ContentMetaConstructor from "../ContentMeta"
 
 const Header = HeaderConstructor()
 const CardGrid = CardGridConstructor()
 const SocialLinks = SocialLinksConstructor()
+const ContentMeta = ContentMetaConstructor()
 componentRegistry.register("CardGrid", CardGridConstructor, "core")
 componentRegistry.register("SocialLinks", SocialLinksConstructor, "core")
+componentRegistry.register("ContentMeta", ContentMetaConstructor, "core")
 
 /**
  * The default page frame — three-column layout with left sidebar, center
@@ -46,6 +49,7 @@ export const DefaultFrame: PageFrame = {
               {beforeBody.map((BodyComponent) => (
                 <BodyComponent {...componentData} />
               ))}
+              <ContentMeta {...componentData} />
             </div>
           </div>
           <Content {...componentData} />

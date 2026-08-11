@@ -42,10 +42,6 @@ De opdracht: een geloofwaardige geluidswereld creëren voor het footage.
 
 
 2023
-We mochten dit jaar beginnen met circus als deel van de Schakelcollege Tilburg actie.
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/1216402268?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
-
-
 Onderbreking - even chillen, geluid aan en gaan:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yXEqz3Cba1c?si=PQ-ahwt5tSAH8HGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

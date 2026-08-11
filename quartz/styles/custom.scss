@@ -223,3 +223,60 @@ footer ul {
   font-family: var(--bodyFont);
   color: var(--gray);
 }
+
+// Backlinks moved from the right sidebar up to the breadcrumb slot (replaces
+// "Home > Portfolio > Timeline" with "Backlinks: Waarom IK..."), styled as
+// one centered inline line using the same font/color as the site's other
+// secondary/muted text instead of the plugin's default heading + list block.
+.page-header .backlinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.page-header .backlinks h3 {
+  font-family: var(--bodyFont);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--gray);
+  margin: 0;
+}
+
+.page-header .backlinks h3::after {
+  content: ":";
+}
+
+.page-header .backlinks ul.overflow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: none;
+}
+
+.page-header .backlinks ul.overflow > li:not(:last-child)::after {
+  content: ",";
+  color: var(--gray);
+}
+
+.page-header .backlinks a {
+  font-family: var(--bodyFont);
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+// Numbered/bulleted lists inherit the centered text-align from `.center
+// article`, which strands the marker far to the left of its (now-centered,
+// narrower) text. Move the marker next to the text instead of the line edge.
+.center article ol,
+.center article ul {
+  list-style-position: inside;
+}
