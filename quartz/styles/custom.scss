@@ -232,3 +232,22 @@ footer ul {
 .center article ul {
   list-style-position: inside;
 }
+
+// Video embeds are pasted in as fixed-size iframes (width="640" height="360",
+// one portrait at 360x640). Fixed pixel width doesn't shrink on narrow
+// screens, forcing horizontal scrolling on phones. `height: auto` alone
+// doesn't reliably derive the aspect ratio from an iframe's width/height
+// attributes the way it does for <img> — it falls back to the browser's
+// default 150px — so the ratio has to be set explicitly instead.
+.center article iframe {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+// The one portrait (vertical) video on the site — override the default 16:9.
+// Add another line like this here if more vertical videos get added later.
+.center article iframe[src*="1215754141"] {
+  aspect-ratio: 9 / 16;
+}
