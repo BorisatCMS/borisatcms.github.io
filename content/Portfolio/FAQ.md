@@ -18,10 +18,11 @@ title: FAQ
 
 <p class="section-label">Contact</p>
 
-<form id="contact-form" class="contact-form" action="https://formspree.io/f/xeajgpvp" method="POST">
-  <input type="hidden" name="_next" value="https://beaverstudio2007.github.io/portfolio/bedankt" />
-  <input type="hidden" name="_subject" value="Nieuwe contactaanvraag" />
-  <input type="hidden" name="_autoresponse" value="Hartstikke bedankt voor uw initiatief! Meestal beantwoord ik uw formulier in 2 uur (in werkdagen)." />
+<form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="a7b1eb55-f110-4546-a107-ec609c905633" />
+  <input type="hidden" name="redirect" value="https://beaverstudio2007.github.io/portfolio/bedankt" />
+  <input type="hidden" name="subject" value="Nieuwe contactaanvraag" />
+  <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
   <input type="text" name="name" placeholder="Naam" />
   <input type="email" name="email" placeholder="E-mail*" required />
   <input type="tel" name="phone" placeholder="Telefoonnummer" />
