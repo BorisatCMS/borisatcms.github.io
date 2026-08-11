@@ -265,24 +265,28 @@ footer ul {
 // doesn't reliably derive the aspect ratio from an iframe's width/height
 // attributes the way it does for <img> — it falls back to the browser's
 // default 150px — so the ratio has to be set explicitly instead.
+// Fixed 640x360 on desktop (as originally pasted), shrinking only on
+// screens narrower than that via max-width — not stretched to fill wide
+// desktop containers.
 .center article iframe {
-  width: 100%;
+  width: 640px;
   max-width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
 }
 
-// The one portrait (vertical) video on the site — override the default 16:9.
-// Add another line like this here if more vertical videos get added later.
+// The one portrait (vertical) video on the site — override the default 16:9
+// and the default width (its own original size was 360x640).
 .center article iframe[src*="1215754141"] {
+  width: 360px;
   aspect-ratio: 9 / 16;
 }
 
-// Table of Contents entries: same orange as the headings they link to,
-// instead of the plugin's default var(--dark) (opacity still applies for
-// the dim/highlighted in-view states) — and a touch smaller.
+// Table of Contents entries: same gray as the site's secondary/muted text
+// (already flips light/dark per mode), instead of the plugin's default
+// var(--dark) — and a touch smaller.
 .toc-content.overflow > li > a {
-  color: #ae4e0d;
+  color: var(--gray);
   font-size: 0.85rem;
 }
 
@@ -300,6 +304,16 @@ footer ul {
   padding: 2rem 1.5rem;
 }
 
+// base.scss hides .toc outright on anything narrower than desktop (tablet
+// AND mobile) — undo that for tablet, where there's no toggle button and no
+// other way to reach it, so it's just visible normally like on desktop.
+@media all and ($tablet) {
+  .toc {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 // Table of Contents is hidden by default on mobile (opened via the hamburger
 // button next to search/darkmode instead) — shown as a full-screen overlay
 // with the same background blur as the search modal.
@@ -315,8 +329,20 @@ footer ul {
     padding: 4rem 1.5rem;
   }
 
+  // Must stay a flex column (not display:block) — the TOC's own internal
+  // sizing (.toc { flex: 0 0.5 auto }) depends on a flex parent to compute
+  // its height; without it, the entries collapse to 0x0 despite technically
+  // being "visible".
   .sidebar.right.toc-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // base.scss hides .toc itself (not just the sidebar) below desktop width —
+  // undo that specifically when the overlay is open.
+  .sidebar.right.toc-open .toc {
+    display: flex;
+    flex-direction: column;
   }
 
   // The hamburger button itself only makes sense on mobile — desktop/tablet
