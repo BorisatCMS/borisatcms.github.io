@@ -49,9 +49,9 @@ CardGrid.css = `
   margin: 2rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .card-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

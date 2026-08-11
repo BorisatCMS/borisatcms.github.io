@@ -20,6 +20,15 @@ html {
   margin: 0;
 }
 
+// At 200px, a longer title like "Boris at CMS" wraps to 3 lines on a phone
+// screen, pushing everything (including the first card on the homepage) far
+// down. Shrink it so it fits in at most 1-2 lines instead.
+@media all and ($mobile) {
+  .article-title {
+    font-size: 70px;
+  }
+}
+
 .page-header header {
   margin: 0.5rem 0;
 }
