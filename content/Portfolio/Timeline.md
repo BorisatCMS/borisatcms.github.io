@@ -4,7 +4,7 @@ Spoiler: **de afgelopen twee jaar** bestaat mijn belangrijkste werk uit een **co
 [[Sound]]
 
 Met name van Boris at CMS, toon ik op de bovenstaande pagina’s graag wat elk aspect precies inhoudt.
-![[IMG-546f810639df986b337c936d3e5ed58a-V.png|400]]
+![[content/Portfolio/IMG-546f810639df986b337c936d3e5ed58a-V.png|400]]
 ## **2021 - Eigen weg gekozen**
 **11 augustus - Van alle ICT-richtingen bleef één vakgebied steeds terugkomen: editen.**
 Daar ontdekte ik dat ik techniek niet alleen wil begrijpen, maar ook wil gebruiken om **verhalen te vertellen.** Begin van [[Motion]]:
