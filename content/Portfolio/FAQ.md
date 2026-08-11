@@ -19,13 +19,13 @@ title: FAQ
 <p class="section-label">Contact</p>
 
 <form id="contact-form" class="contact-form">
-  <input type="text" name="name" placeholder="Naam" required />
+  <input type="text" name="name" placeholder="Naam" />
   <input type="email" name="email" placeholder="E-mail" required />
   <input type="tel" name="phone" placeholder="Telefoonnummer" />
   <textarea name="message" placeholder="Waar kunnen we je mee helpen?" rows="5" required></textarea>
   <label class="contact-form-checkbox">
     <input type="checkbox" name="privacy" required />
-    <span>Ik ga akkoord met de <a href="#">privacyverklaring</a></span>
+    <span>Ik ga akkoord met de <a href="/Portfolio/privacyverklaring">privacyverklaring</a></span>
   </label>
   <button type="submit">Verzend</button>
 </form>
@@ -90,11 +90,14 @@ title: FAQ
     var email = form.email.value;
     var phone = form.phone.value;
     var message = form.message.value;
-    var subject = encodeURIComponent("Contactaanvraag van " + name);
+    var subject = encodeURIComponent("Contactaanvraag van " + (name || email));
     var body = encodeURIComponent(
       "Naam: " + name + "\nE-mail: " + email + "\nTelefoon: " + phone + "\n\n" + message
     );
-    window.location.href = "mailto:REPLACE-WITH-YOUR-EMAIL@example.com?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:berchon010@gmail.com?subject=" + subject + "&body=" + body;
+    setTimeout(function () {
+      window.location.href = "/Portfolio/bedankt";
+    }, 400);
   });
 })();
 </script>
