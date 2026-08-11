@@ -13,9 +13,9 @@ configuration:
     - templates
     - .obsidian
   tickerItems:
-    - digital garden
-    - built with quartz
-    - edit tickerItems in quartz.config.yaml
+    - Borys Popov
+    - Beheersen van Adobe en Davinci Resolve
+    - Camera, Motion of Sound, combinatie mogelijk
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
