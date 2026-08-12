@@ -2,7 +2,7 @@ Spoiler: **de afgelopen twee jaar** bestaat mijn belangrijkste werk uit een **co
 [[Camera]]
 [[Motion]]
 [[Sound]]
-![[content/Portfolio/IMG-546f810639df986b337c936d3e5ed58a-V.png|352]]
+![[IMG-546f810639df986b337c936d3e5ed58a-V.png|352]]
 Met name van Boris at CMS, toon ik op de bovenstaande pagina’s graag wat elk aspect precies inhoudt.
 
 ## **2021 - Eigen weg gekozen**
