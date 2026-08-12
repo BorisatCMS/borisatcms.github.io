@@ -2,20 +2,18 @@
 title: Privacyverklaring
 unlisted: true
 ---
+We beginnen makkelijk.
+## Welke gegevens verzamel ik?
 
-Deze privacyverklaring is een voorbeeldtekst. Vervang deze door je eigen, juridisch correcte privacyverklaring voordat je het contactformulier live zet.
+Wanneer u het contactformulier invult, verzamel ik de gegevens die u zelf invoert: e-mailadres en uw bericht (uw naam en telefoonnummer zijn optioneel)
 
-## Welke gegevens verzamelen we?
+## Waar gebruik ik uw gegevens voor?
 
-Wanneer je het contactformulier invult, verzamelen we de gegevens die je zelf invoert: je naam, e-mailadres, telefoonnummer (optioneel) en je bericht.
-
-## Waar gebruiken we je gegevens voor?
-
-We gebruiken deze gegevens uitsluitend om te reageren op je vraag of aanvraag.
+Ik gebruik deze gegevens uitsluitend om te reageren op je vraag of aanvraag.
 
 ## Bewaartermijn
 
-We bewaren je gegevens niet langer dan nodig is om je vraag te beantwoorden.
+Ik bewaren je gegevens niet langer dan nodig is om je vraag te beantwoorden.
 
 ## Contact
 
