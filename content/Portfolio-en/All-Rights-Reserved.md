@@ -11,4 +11,4 @@ In practice, that means:
 
 - You're free to **watch this site and share links** to it.
 - You may **not** copy, re-edit, re-upload or repost any of the video, photo, animation or sound material without asking me first.
-- Want to use something for a project, school assignment or as a reference? Just [get in touch](/Portfolio-en/faq) — I'm happy to talk about it.
+- Want to use something for a project, school assignment or as a reference? Just [get in touch](/portfolio-en/faq) — I'm happy to talk about it.

@@ -35,7 +35,7 @@ translationKey: faq
   <textarea name="message" placeholder="Waar kunnen we je mee helpen?*" rows="5" required></textarea>
   <label class="contact-form-checkbox">
     <input type="checkbox" name="privacy" required />
-    <span>Ik ga akkoord met de <a href="/Portfolio/privacyverklaring">privacyverklaring</a></span>
+    <span>Ik ga akkoord met de <a href="/portfolio/privacyverklaring">privacyverklaring</a></span>
   </label>
   <button type="submit">Verzend</button>
 </form>

@@ -19,4 +19,4 @@ Ik bewaren je gegevens niet langer dan nodig is om je vraag te beantwoorden.
 
 ## Contact
 
-Heb je vragen over deze privacyverklaring? Neem dan contact op via het [contactformulier](/Portfolio/faq).
+Heb je vragen over deze privacyverklaring? Neem dan contact op via het [contactformulier](/portfolio/faq).

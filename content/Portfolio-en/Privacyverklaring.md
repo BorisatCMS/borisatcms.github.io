@@ -19,4 +19,4 @@ I don't keep your data longer than is necessary to answer your question.
 
 ## Contact
 
-Do you have questions about this privacy policy? Get in touch via the [contact form](/Portfolio-en/faq).
+Do you have questions about this privacy policy? Get in touch via the [contact form](/portfolio-en/faq).

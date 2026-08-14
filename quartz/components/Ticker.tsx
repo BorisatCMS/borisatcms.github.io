@@ -66,6 +66,12 @@ Ticker.css = `
   animation-play-state: paused;
 }
 
+@media (min-width: 1200px) {
+  .ticker-track {
+    animation-duration: 42s;
+  }
+}
+
 .ticker-item {
   padding: 0.3rem 0.4rem 0.3rem 0;
   font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", Menlo, monospace;

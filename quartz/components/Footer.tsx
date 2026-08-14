@@ -6,8 +6,8 @@ const COPYRIGHT: Record<string, string> = {
 }
 
 const LINKS: Record<string, { text: string; href: string }> = {
-  nl: { text: "Wat houdt het in?", href: "/Portfolio/alle-rechten-voorbehouden" },
-  en: { text: "What does it contain?", href: "/Portfolio-en/all-rights-reserved" },
+  nl: { text: "Wat houdt het in?", href: "/portfolio/alle-rechten-voorbehouden" },
+  en: { text: "What does it contain?", href: "/portfolio-en/all-rights-reserved" },
 }
 
 const Footer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
