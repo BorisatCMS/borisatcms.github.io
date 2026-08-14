@@ -3,7 +3,7 @@ title: Boris at CMS
 lang: en
 translationKey: home
 cards:
-  - title: Why me...
+  - title: Why ME...
     subhead: And why sound makes up half the experience.
     color: "#5b9aa0"
     href: /portfolio-en/waarom-ik...
@@ -23,11 +23,11 @@ cards:
     subhead: What I've made since 2021
     color: "#e18fa7"
     href: /portfolio-en/timeline
-  - title: Way of working
+  - title: Working Method
     subhead: From scriptwriting to filming and editing.
     color: "#d1a13a"
     href: /portfolio-en/werkwijze
-  - title: Showreel
+  - title: Showreels
     subhead: What I can make for you today.
     color: "#ad7e95"
     href: /portfolio-en/showreels

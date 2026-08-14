@@ -27,7 +27,7 @@ cards:
     subhead: Van scriptwriting tot het filmen en editen.
     color: "#d1a13a"
     href: /portfolio/werkwijze
-  - title: Showreel
+  - title: Showreels
     subhead: Wat ik vandaag voor jou kan maken.
     color: "#ad7e95"
     href: /portfolio/showreels
