@@ -1,24 +1,24 @@
 ---
 title: FAQ
-lang: nl
+lang: en
 translationKey: faq
 ---
 
 <div class="faq-list">
 
 <details>
-<summary>Welke diensten biedt u?</summary>
-<p>Ik bied animaties, geluidsontwerp, creatieve ideeën en positieve samenwerking. Combinatie mogelijk</p>
+<summary>What services do you offer?</summary>
+<p>I offer animations, sound design, creative ideas and positive collaboration. Combinations possible</p>
 </details>
 
 <details>
-<summary>In welke programma's bewerkt u video's?</summary>
-<p>Voor animaties - After Effects, voor gefilmd content - Premiere Pro/Davinci Resolve, voor het nabewerken van foto's - Photoshop.</p>
+<summary>Which programs do you use to edit videos?</summary>
+<p>For animations - After Effects, for filmed content - Premiere Pro/Davinci Resolve, for photo retouching - Photoshop.</p>
 </details>
 
 <details>
 <summary>Coming soon</summary>
-<p>Afhankelijk hoe vaak de vraag wordt gesteld.</p>
+<p>Depending on how often the question gets asked.</p>
 </details>
 
 </div>
@@ -27,17 +27,17 @@ translationKey: faq
 
 <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="a7b1eb55-f110-4546-a107-ec609c905633" />
-  <input type="hidden" name="redirect" value="https://beaverstudio2007.github.io/portfolio/bedankt" />
-  <input type="hidden" name="subject" value="Nieuwe contactaanvraag" />
-  <input type="text" name="name" placeholder="Naam" />
-  <input type="email" name="email" placeholder="E-mail*" required />
-  <input type="tel" name="phone" placeholder="Telefoonnummer" />
-  <textarea name="message" placeholder="Waar kunnen we je mee helpen?*" rows="5" required></textarea>
+  <input type="hidden" name="redirect" value="https://beaverstudio2007.github.io/portfolio-en/bedankt" />
+  <input type="hidden" name="subject" value="New contact request" />
+  <input type="text" name="name" placeholder="Name" />
+  <input type="email" name="email" placeholder="Email*" required />
+  <input type="tel" name="phone" placeholder="Phone number" />
+  <textarea name="message" placeholder="How can we help you?*" rows="5" required></textarea>
   <label class="contact-form-checkbox">
     <input type="checkbox" name="privacy" required />
-    <span>Ik ga akkoord met de <a href="/Portfolio/privacyverklaring">privacyverklaring</a></span>
+    <span>I agree to the <a href="/Portfolio-en/privacyverklaring">privacy policy</a></span>
   </label>
-  <button type="submit">Verzend</button>
+  <button type="submit">Send</button>
 </form>
 
 <style>

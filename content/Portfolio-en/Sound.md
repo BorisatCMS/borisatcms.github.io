@@ -1,11 +1,11 @@
 ---
-lang: nl
+lang: en
 translationKey: sound
 ---
 
-🔊 Met **Sound** kan ik bepalen waar de aandacht van de kijker naartoe gaat en hoe een moment wordt ervaren. Een geluidseffect kan een bepaalde **beweging of gebeurtenis benadrukken**, terwijl muziek en ambience de sfeer van een scène bepalen.
+🔊 With **Sound** I can determine where the viewer's attention goes and how a moment is experienced. A sound effect can emphasize a certain **movement or event**, while music and ambience set the mood of a scene.
 
-Door geluid bewust te combineren met het beeld, wordt een video **niet alleen duidelijker**, maar ook **prettiger en interessanter** om naar te kijken. Sound kan daardoor een scène geloofwaardiger maken, emotie versterken en de **aandacht precies op het juiste moment** sturen.
+By deliberately combining sound with the image, a video becomes **not only clearer**, but also **more enjoyable and interesting** to watch. Sound can therefore make a scene more believable, strengthen emotion and steer **attention to exactly the right moment**.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/dpQBnqdiZPc?si=JX2ajmrt4jAoTRLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -14,4 +14,3 @@ Door geluid bewust te combineren met het beeld, wordt een video **niet alleen du
 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/yXEqz3Cba1c?si=x6WopPqgmqDom5wZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-

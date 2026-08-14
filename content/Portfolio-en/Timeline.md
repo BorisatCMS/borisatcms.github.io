@@ -1,76 +1,76 @@
 ---
-lang: nl
+lang: en
 translationKey: timeline
 ---
 
-Spoiler: **de afgelopen twee jaar** bestaat mijn belangrijkste werk uit een **combinatie van**:
-[[Portfolio/Camera]]
-[[Portfolio/Motion]]
-[[Portfolio/Sound]]
+Spoiler: **the past two years** my most important work has consisted of a **combination of**:
+[[Portfolio-en/Camera]]
+[[Portfolio-en/Motion]]
+[[Portfolio-en/Sound]]
 ![[IMG-546f810639df986b337c936d3e5ed58a-V.png|352]]
-Met name van Boris at CMS, toon ik op de bovenstaande pagina’s graag wat elk aspect precies inhoudt.
+Namely from Boris at CMS, I'm happy to show you on the pages above exactly what each aspect involves.
 
-## **2021 - Eigen weg gekozen**
-**11 augustus - Van alle ICT-richtingen bleef één vakgebied steeds terugkomen: editen.**
-Daar ontdekte ik dat ik techniek niet alleen wil begrijpen, maar ook wil gebruiken om **verhalen te vertellen.** Begin van [[Portfolio/Motion]]:
+## **2021 - Chose my own path**
+**11 August - Out of all the ICT tracks, one field kept coming back: editing.**
+That's where I discovered that I don't just want to understand technology, but also want to use it to **tell stories.** The start of [[Portfolio-en/Motion]]:
 
-**28 augustus - Het is tijd om van mijn hobby iets concreets te maken.**
-Een video over de masterclass stijldansen bij een plaatselijke dansclub.
+**28 August - Time to turn my hobby into something concrete.**
+A video about the ballroom dancing masterclass at a local dance club.
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215723885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
-Dezelfde post op Instagram pagina:
+The same post on Instagram:
 www.instagram.com/p/CTHDwI8D6bx/
 
 
-**26 september - Een stukje Content Creatie.**
-Eerste deelname aan de wedstrijd — niet gewonnen.
+**26 September - A bit of Content Creation.**
+First entry in the competition — didn't win.
 ![[Sequence 02.gif|400]]
 
 
-## **2022 - Motion Plus en SFX Pro**
-**Onderbreking - het beste jaar ooit - 2019**
+## **2022 - Motion Plus and SFX Pro**
+**Interlude - the best year ever - 2019**
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1216391673?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
-**Januari - Tweede deelname aan de wedstrijd — weer niet gewonnen.**
+**January - Second entry in the competition — didn't win again.**
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215757940?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
-**1 maart - Begin van [[Portfolio/Sound]]**
-In die tijd heb ik gehoord dat het **verschil tussen amateur- en professionele video's in Sound Design** zit.
-Het houdt in dat geluid en muziek het eindproduct levendiger maken.
+**1 March - Start of [[Portfolio-en/Sound]]**
+Around that time I learned that the **difference between amateur and professional videos comes down to Sound Design**.
+It means that sound and music make the final product feel more alive.
 
-Dankzij een lokale muziekschool waar ik **piano leerde te spelen**, is er mogelijkheid verschenen om samen te werken in de media sfeer.
+Thanks to a local music school where I **learned to play piano**, an opportunity appeared to collaborate in the media world.
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215739650?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
-**De opdracht: een geloofwaardige geluidswereld creëren voor het footage.**
+**The brief: create a believable sound world for the footage.**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/dpQBnqdiZPc?si=NuTuL8-bPTrlNota" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
 ## **2023 - SFX Pro Max**
-**Onderbreking - even chillen, geluid aan en gaan**
+**Interlude - just chilling, sound on and go**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/yXEqz3Cba1c?si=PQ-ahwt5tSAH8HGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
 
-## **2024 - Nogmaals eigen weg kiezen**
+## **2024 - Choosing my own path again**
 
-Net als in 2021 stond ik ook dit jaar met een keuze van **verschillende beroepsopleidingen.**
-Toen dacht ik: ik wil graag meer **universeel worden** in de mediasfeer en verder verdiepen in wat ik al in huis heb.
+Just like in 2021, this year I again faced a choice between **several vocational programs.**
+That's when I thought: I want to become more **well-rounded** in the media world and deepen what I already have.
 
-Mijn keuze was op de MBO-4 opleiding tot **AV-specialist** gevallen.
-Hier is een voorbeeld hoe ik me heb gepresenteerd.
+My choice fell on the MBO-4 program to become an **AV specialist**.
+Here's an example of how I presented myself.
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215730864?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 
 
 
-## **2025 - Meer AV-specialiteit**
+## **2025 - More AV specialization**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/2NqBLYXCJso?si=Nt0VdioQb9GufiNN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
-## **2026 - Social Content als AV-richting**
-**17 mei - 800+ likes en 10K+ views on TikTok in 7 dagen**
+## **2026 - Social Content as an AV direction**
+**17 May - 800+ likes and 10K+ views on TikTok in 7 days**
 <iframe width="640" height="360" src="https://www.youtube.com/embed/CzPgFTLxoqA?si=x9d2q2DPpAw_RRgF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [www.tiktok.com/@boris_at_cms/video/7640736773974347041](https://www.tiktok.com/@boris_at_cms/video/7640736773974347041)

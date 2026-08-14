@@ -5,16 +5,19 @@ import CardGridConstructor from "../CardGrid"
 import SocialLinksConstructor from "../SocialLinks"
 import ContentMetaConstructor from "../ContentMeta"
 import VisitHistoryConstructor from "../VisitHistory"
+import LanguageSwitcherConstructor from "../LanguageSwitcher"
 
 const Header = HeaderConstructor()
 const CardGrid = CardGridConstructor()
 const SocialLinks = SocialLinksConstructor()
 const ContentMeta = ContentMetaConstructor()
 const VisitHistory = VisitHistoryConstructor()
+const LanguageSwitcher = LanguageSwitcherConstructor()
 componentRegistry.register("CardGrid", CardGridConstructor, "core")
 componentRegistry.register("SocialLinks", SocialLinksConstructor, "core")
 componentRegistry.register("ContentMeta", ContentMetaConstructor, "core")
 componentRegistry.register("VisitHistory", VisitHistoryConstructor, "core")
+componentRegistry.register("LanguageSwitcher", LanguageSwitcherConstructor, "core")
 
 /**
  * Full-width page frame — no sidebars. The center content area spans the
@@ -62,6 +65,7 @@ export const FullWidthFrame: PageFrame = {
         </div>
         <Footer {...componentData} />
         <SocialLinks {...componentData} />
+        <LanguageSwitcher {...componentData} />
       </>
     )
   },

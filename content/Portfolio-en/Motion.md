@@ -1,12 +1,12 @@
 ---
-lang: nl
+lang: en
 translationKey: motion
 ---
 
-👨🏻‍💻 Met **Motion** kan ik informatie of ideeën zichtbaar maken die met alleen een camera moeilijk uit te leggen zijn. Zo kan ik bijvoorbeeld de ontwikkeling van iemands taalniveau visualiseren: van A0 tot C2, **waarbij je in één oogopslag ziet waar iemand zich bevindt en welke stappen nog volgen.**
+👨🏻‍💻 With **Motion** I can make information or ideas visible that are hard to explain with a camera alone. For example, I can visualize the development of someone's language level: from A0 to C2, **letting you see at a glance where someone stands and which steps are still ahead.**
 
-Motion hoeft echter **niet altijd complexe informatie** uit te leggen. Een volledig geanimeerde video kan op zichzelf al een sterk verhaal vertellen. 
-**Met een goed ontwerp, duidelijke beweging en passende timing kan animatie de boodschap zelfstandig dragen.**
+Motion doesn't always have to explain **complex information**, though. A fully animated video can tell a strong story all on its own.
+**With good design, clear movement and the right timing, animation can carry the message by itself.**
 
 
 **Premiere Pro**
@@ -14,7 +14,7 @@ Motion hoeft echter **niet altijd complexe informatie** uit te leggen. Een volle
 
 
 
-**Animatie in After Effects van nul**
+**Animation in After Effects from scratch**
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215739650?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/onMJF2bZ4QU?si=Ho8XoQTvPGevc-lh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe width="640" height="360" src="https://www.youtube.com/embed/aJ27LRXLNbo?si=3JX6wOuOJSGNRhVh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -33,4 +33,3 @@ After Effects Template
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215723885?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215751383?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1215730864?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
-

@@ -1,3 +1,8 @@
+---
+lang: nl
+translationKey: werkwijze
+---
+
 **Elk project is anders.** Daarom pas ik mijn werkwijze aan op wat de productie nodig heeft — van fotografie tot een complete productie met Camera, Motion en Sound (CMS)
 
 ### 📝01 — Concept

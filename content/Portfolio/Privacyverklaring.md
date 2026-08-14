@@ -1,6 +1,8 @@
 ---
 title: Privacyverklaring
 unlisted: true
+lang: nl
+translationKey: privacyverklaring
 ---
 We beginnen makkelijk.
 ## Welke gegevens verzamel ik?
