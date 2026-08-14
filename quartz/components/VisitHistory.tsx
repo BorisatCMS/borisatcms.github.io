@@ -23,21 +23,33 @@ function writeTrail(trail) {
   } catch {}
 }
 
+// Pages are split across two independent trees ("/" + "/portfolio/..." for
+// Dutch, "/en" + "/portfolio-en/..." for English). Language switching jumps
+// straight from one tree to the other without passing through a homepage in
+// between, so entries from the other language have to be filtered out here
+// rather than relying on a homepage reset to clear them.
+function pageLang(path) {
+  return path === "/en" || path.indexOf("/portfolio-en/") === 0 ? "en" : "nl";
+}
+
 function renderVisitHistory() {
   const container = document.getElementById("visit-history-trail");
   if (!container) return;
 
   const currentPath = window.location.pathname;
   const currentTitle = document.title;
-  const isHome = currentPath === "/";
+  const isHome = currentPath === "/" || currentPath === "/en";
 
   // Landing on the homepage always resets the trail — history starts fresh
   // from there, so nothing shows on the homepage itself either.
   const storedTrail = isHome ? [] : readTrail();
 
-  // Drop any existing entry for the current page so pages never repeat in
-  // the trail (a revisited page moves to the end instead of duplicating).
-  const trail = storedTrail.filter((item) => item.path !== currentPath);
+  // Drop any existing entry for the current page (revisiting moves it to the
+  // end instead of duplicating) and any entry from the other language.
+  const currentLang = pageLang(currentPath);
+  const trail = storedTrail.filter(
+    (item) => item.path !== currentPath && pageLang(item.path) === currentLang,
+  );
 
   container.innerHTML = "";
   trail.forEach((item, i) => {

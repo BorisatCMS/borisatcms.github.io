@@ -1,5 +1,5 @@
 ---
-title: Wat betekent "alle rechten voorbehouden"?
+title: 'Wat betekent "alle rechten voorbehouden"?'
 unlisted: true
 lang: nl
 translationKey: all-rights-reserved
