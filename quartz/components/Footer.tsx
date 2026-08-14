@@ -1,20 +1,27 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
-const LINKS: Record<string, string> = {
-  "What does it contain?": "/Portfolio/all-rights-reserved",
-  "Discord Community": "https://discord.gg/cRFFHYye7t",
+const COPYRIGHT: Record<string, string> = {
+  nl: "Alle rechten voorbehouden.",
+  en: "All rights reserved.",
 }
 
-const Footer: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
+const LINKS: Record<string, { text: string; href: string }> = {
+  nl: { text: "Wat houdt het in?", href: "/Portfolio/alle-rechten-voorbehouden" },
+  en: { text: "What does it contain?", href: "/Portfolio-en/all-rights-reserved" },
+}
+
+const Footer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
+  const lang = (fileData.frontmatter?.lang as string | undefined) ?? "nl"
+  const copyright = COPYRIGHT[lang] ?? COPYRIGHT.nl
+  const rightsLink = LINKS[lang] ?? LINKS.nl
+
   return (
     <footer class={displayClass ?? ""}>
-      <p>&copy; 2026 Borys Popov. All rights reserved.</p>
+      <p>&copy; 2026 Borys Popov. {copyright}</p>
       <ul>
-        {Object.entries(LINKS).map(([text, link]) => (
-          <li>
-            <a href={link}>{text}</a>
-          </li>
-        ))}
+        <li>
+          <a href={rightsLink.href}>{rightsLink.text}</a>
+        </li>
       </ul>
     </footer>
   )
