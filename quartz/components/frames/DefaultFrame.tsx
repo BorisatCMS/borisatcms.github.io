@@ -7,6 +7,7 @@ import ContentMetaConstructor from "../ContentMeta"
 import VisitHistoryConstructor from "../VisitHistory"
 import TocToggleConstructor from "../TocToggle"
 import LanguageSwitcherConstructor from "../LanguageSwitcher"
+import FooterConstructor from "../Footer"
 
 const Header = HeaderConstructor()
 const CardGrid = CardGridConstructor()
@@ -15,12 +16,14 @@ const ContentMeta = ContentMetaConstructor()
 const VisitHistory = VisitHistoryConstructor()
 const TocToggle = TocToggleConstructor()
 const LanguageSwitcher = LanguageSwitcherConstructor()
+const Footer = FooterConstructor()
 componentRegistry.register("CardGrid", CardGridConstructor, "core")
 componentRegistry.register("SocialLinks", SocialLinksConstructor, "core")
 componentRegistry.register("ContentMeta", ContentMetaConstructor, "core")
 componentRegistry.register("VisitHistory", VisitHistoryConstructor, "core")
 componentRegistry.register("TocToggle", TocToggleConstructor, "core")
 componentRegistry.register("LanguageSwitcher", LanguageSwitcherConstructor, "core")
+componentRegistry.register("Footer", FooterConstructor, "core")
 
 /**
  * The default page frame — three-column layout with left sidebar, center
@@ -38,7 +41,6 @@ export const DefaultFrame: PageFrame = {
     afterBody,
     left,
     right,
-    footer: Footer,
   }: PageFrameProps) {
     return (
       <>
