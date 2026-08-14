@@ -1,5 +1,7 @@
 ---
 title: Boris at CMS
+lang: nl
+translationKey: home
 cards:
   - title: Waarom IK...
     subhead: En waarom geluid de helft van de beleving bepaalt.

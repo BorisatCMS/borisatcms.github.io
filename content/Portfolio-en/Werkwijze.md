@@ -1,11 +1,10 @@
 ---
-title: Werkwijze
+title: Way of working
 lang: en
 translationKey: werkwijze
-unlisted: true
 ---
 
-**Every project is different.** [Placeholder translation] That's why I adapt my way of working to what the production needs — from photography to a complete production with Camera, Motion and Sound (CMS).
+**Every project is different.** That's why I adapt my way of working to what the production needs — from photography to a complete production with Camera, Motion and Sound (CMS).
 
 ### 📝01 — Concept
 
