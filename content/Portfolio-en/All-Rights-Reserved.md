@@ -1,5 +1,5 @@
 ---
-title: 'What does "All rights reserved" mean?'
+title: What does it contain?
 unlisted: true
 lang: en
 translationKey: all-rights-reserved

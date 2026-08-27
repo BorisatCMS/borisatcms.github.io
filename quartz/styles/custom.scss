@@ -133,6 +133,25 @@ body[data-slug="portfolio-en/werkwijze"] .page > #quartz-body {
 // script whenever the language is switched, to prove the TOC can track
 // client-side content swaps instead of just being hidden.
 
+// The three-bar TOC-toggle button is pointless on Werkwijze — its right
+// sidebar is hidden outright above, so opening it would never show anything.
+@media all and ($mobile) {
+  body[data-slug="portfolio/werkwijze"] .toc-toggle-button,
+  body[data-slug="portfolio-en/werkwijze"] .toc-toggle-button {
+    display: none;
+  }
+}
+
+// Visit-history trail ("list of pages") hidden on Werkwijze and the
+// rights-reserved pages, both languages — these are reached directly (via
+// homepage card or footer link), not by clicking through other content.
+body[data-slug="portfolio/werkwijze"] #visit-history-trail,
+body[data-slug="portfolio-en/werkwijze"] #visit-history-trail,
+body[data-slug="portfolio/alle-rechten-voorbehouden"] #visit-history-trail,
+body[data-slug="portfolio-en/all-rights-reserved"] #visit-history-trail {
+  display: none;
+}
+
 // Sub-headings ("secondary" text like the Timeline's 2021/2022/2023 section
 // markers, and the Table of Contents entries built from them) switch to the
 // body font instead of the decorative Amatic SC used for the big h1 title —
@@ -317,6 +336,12 @@ footer ul {
 .search > .search-container > .search-space {
   margin-top: 0;
   margin-bottom: 12vh;
+}
+
+@media all and ($mobile) {
+  .search > .search-container > .search-space {
+    margin-bottom: calc(12vh + 100px);
+  }
 }
 
 // Results normally render in normal flow below the input, so the input (and

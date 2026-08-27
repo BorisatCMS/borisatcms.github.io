@@ -90,9 +90,18 @@ a.language-switcher-option:hover {
   color: #fff;
 }
 
-@media all and (max-width: 800px) {
+/* At narrow widths the left-side search/darkmode/toc-toggle row and this
+   pill are both anchored to the same bottom:1rem level and can run into
+   each other — trim the icon and padding so both groups fit side by side
+   instead of overlapping. */
+@media (max-width: 480px) {
   .language-switcher {
-    bottom: 4.5rem;
+    gap: 0.15rem;
+    padding: 0 0.35rem;
+  }
+
+  .language-switcher-icon {
+    display: none;
   }
 }
 `

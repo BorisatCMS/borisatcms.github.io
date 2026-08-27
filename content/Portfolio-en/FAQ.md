@@ -73,6 +73,11 @@ translationKey: faq
   font-size: 0.9rem;
   color: var(--gray);
 }
+@media (max-width: 800px) {
+  .contact-form-checkbox {
+    margin-left: 12px;
+  }
+}
 .contact-form-checkbox input {
   margin-top: 0.2rem;
 }
