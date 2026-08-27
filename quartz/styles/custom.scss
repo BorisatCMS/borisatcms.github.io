@@ -142,11 +142,9 @@ body[data-slug="portfolio-en/werkwijze"] .page > #quartz-body {
   }
 }
 
-// Visit-history trail ("list of pages") hidden on Werkwijze and the
-// rights-reserved pages, both languages — these are reached directly (via
-// homepage card or footer link), not by clicking through other content.
-body[data-slug="portfolio/werkwijze"] #visit-history-trail,
-body[data-slug="portfolio-en/werkwijze"] #visit-history-trail,
+// Visit-history trail ("list of pages") hidden on the rights-reserved
+// pages, both languages — reached directly via the footer link, not by
+// clicking through other content. (Werkwijze keeps its trail.)
 body[data-slug="portfolio/alle-rechten-voorbehouden"] #visit-history-trail,
 body[data-slug="portfolio-en/all-rights-reserved"] #visit-history-trail {
   display: none;

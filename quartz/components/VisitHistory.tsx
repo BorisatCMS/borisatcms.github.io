@@ -29,6 +29,7 @@ function renderVisitHistory() {
 
   const currentPath = window.location.pathname;
   const currentTitle = document.title;
+  const currentTranslationKey = container.dataset.translationKey || "";
   const isHome = currentPath === "/" || currentPath === "/en";
 
   // Landing on either homepage always resets the trail — history starts
@@ -37,9 +38,14 @@ function renderVisitHistory() {
 
   // Drop any existing entry for the current page so pages never repeat in
   // the trail (a revisited page moves to the end instead of duplicating).
-  // Switching language keeps the rest of the trail as-is — only the current
-  // page's own language changes, the links already visited don't disappear.
-  const trail = storedTrail.filter((item) => item.path !== currentPath);
+  // Also drop any entry sharing the current page's translationKey — that's
+  // the *other-language version of this same page*, not a different page,
+  // so switching language must not leave a stale link to itself behind.
+  const trail = storedTrail.filter((item) => {
+    if (item.path === currentPath) return false;
+    if (currentTranslationKey && item.translationKey === currentTranslationKey) return false;
+    return true;
+  });
 
   container.innerHTML = "";
   trail.forEach((item, i) => {
@@ -56,7 +62,7 @@ function renderVisitHistory() {
     container.appendChild(a);
   });
 
-  trail.push({ path: currentPath, title: currentTitle });
+  trail.push({ path: currentPath, title: currentTitle, translationKey: currentTranslationKey });
   writeTrail(trail);
 }
 
@@ -64,8 +70,16 @@ document.addEventListener("nav", renderVisitHistory);
 document.addEventListener("render", renderVisitHistory);
 `
 
-const VisitHistory: QuartzComponent = (_props: QuartzComponentProps) => {
-  return <nav id="visit-history-trail" class="visit-history" aria-label="Visit history"></nav>
+const VisitHistory: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+  const translationKey = (fileData.frontmatter?.translationKey as string | undefined) ?? ""
+  return (
+    <nav
+      id="visit-history-trail"
+      class="visit-history"
+      aria-label="Visit history"
+      data-translation-key={translationKey}
+    ></nav>
+  )
 }
 
 VisitHistory.afterDOMLoaded = script
