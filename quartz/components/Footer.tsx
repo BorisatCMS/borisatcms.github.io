@@ -10,6 +10,8 @@ const LINKS: Record<string, { text: string; href: string }> = {
   en: { text: "What does it contain?", href: "/portfolio-en/all-rights-reserved" },
 }
 
+const TIKTOK_HREF = "https://www.tiktok.com/@boris_at_cms"
+
 const Footer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProps) => {
   const lang = (fileData.frontmatter?.lang as string | undefined) ?? "nl"
   const copyright = COPYRIGHT[lang] ?? COPYRIGHT.nl
@@ -21,6 +23,11 @@ const Footer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProp
       <ul>
         <li>
           <a href={rightsLink.href}>{rightsLink.text}</a>
+        </li>
+        <li>
+          <a href={TIKTOK_HREF} target="_blank" rel="noopener noreferrer">
+            TikTok
+          </a>
         </li>
       </ul>
     </footer>
