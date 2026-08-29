@@ -50,13 +50,13 @@ const LINKS = [
     href: "https://www.tiktok.com/@boris_at_cms",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="9.3" cy="16" r="2.6" stroke="currentColor" stroke-width="1.7" />
+        <circle cx="9.5" cy="16" r="3" stroke="currentColor" stroke-width="1.8" />
+        <path d="M12.5 16V5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
         <path
-          d="M11.9 16V6h2.2c.3 2.2 1.8 3.8 4 4.1"
+          d="M12.5 7c.6 2.8 2.9 4.6 5.5 4.6"
           stroke="currentColor"
-          stroke-width="1.7"
+          stroke-width="1.8"
           stroke-linecap="round"
-          stroke-linejoin="round"
         />
       </svg>
     ),
