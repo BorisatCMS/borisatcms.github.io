@@ -69,7 +69,11 @@ const SocialLinks: QuartzComponent = (_props: QuartzComponentProps) => {
       {LINKS.map((link) => (
         <a
           class={`social-links-icon${
-            link.name === "LinkedIn" || link.name === "TikTok" ? " social-links-icon-large" : ""
+            link.name === "LinkedIn"
+              ? " social-links-icon-large"
+              : link.name === "TikTok"
+                ? " social-links-icon-tiktok"
+                : ""
           }`}
           href={link.href}
           target="_blank"
@@ -121,6 +125,11 @@ SocialLinks.css = `
 .social-links-icon-large svg {
   width: 1.8rem;
   height: 1.8rem;
+}
+
+.social-links-icon-tiktok svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* base.scss has a global rule targeting the literal <text> tag (for math/
