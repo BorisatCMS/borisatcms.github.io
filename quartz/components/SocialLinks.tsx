@@ -1,8 +1,10 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // Update these to your actual profile URLs.
-// All three icons share the same 16x16 rounded-square badge (rect 4,4,16,16,rx5)
-// so they read as the same size — only the glyph inside differs.
+// YouTube and Instagram share the same 16x16 rounded-square badge (rect
+// 4,4,16,16,rx5). LinkedIn and TikTok skip the badge outline (just the bare
+// glyph, sized up via .social-links-icon-large) since a square border around
+// their marks looked cluttered.
 const LINKS = [
   {
     name: "YouTube",
@@ -48,12 +50,11 @@ const LINKS = [
     href: "https://www.tiktok.com/@boris_at_cms",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8" />
-        <circle cx="10.3" cy="15" r="2.3" stroke="currentColor" stroke-width="1.6" />
+        <circle cx="9.3" cy="16" r="2.6" stroke="currentColor" stroke-width="1.7" />
         <path
-          d="M12.6 15V7h2c.2 1.9 1.5 3.3 3.4 3.6"
+          d="M11.9 16V6h2.2c.3 2.2 1.8 3.8 4 4.1"
           stroke="currentColor"
-          stroke-width="1.6"
+          stroke-width="1.7"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -67,7 +68,9 @@ const SocialLinks: QuartzComponent = (_props: QuartzComponentProps) => {
     <div class="social-links">
       {LINKS.map((link) => (
         <a
-          class={`social-links-icon${link.name === "LinkedIn" ? " social-links-icon-linkedin" : ""}`}
+          class={`social-links-icon${
+            link.name === "LinkedIn" || link.name === "TikTok" ? " social-links-icon-large" : ""
+          }`}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
@@ -115,7 +118,7 @@ SocialLinks.css = `
   height: 1.2rem;
 }
 
-.social-links-icon-linkedin svg {
+.social-links-icon-large svg {
   width: 1.8rem;
   height: 1.8rem;
 }
@@ -123,7 +126,7 @@ SocialLinks.css = `
 /* base.scss has a global rule targeting the literal <text> tag (for math/
    typst rendering) that sets fill: var(--darkgray), which beats this icon's
    fill="currentColor" and makes it shift with light/dark mode. Pin it. */
-.social-links-icon-linkedin svg text {
+.social-links-icon-large svg text {
   fill: #fff;
 }
 `
