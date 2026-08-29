@@ -33,9 +33,7 @@ function writeTrail(trail) {
 
 function renderVisitHistory() {
   const container = document.getElementById("visit-history-trail");
-  const linksEl = document.getElementById("visit-history-links");
-  const closeButton = document.getElementById("visit-history-close");
-  if (!container || !linksEl) return;
+  if (!container) return;
 
   const currentPath = window.location.pathname;
   const currentTitle = document.title;
@@ -63,14 +61,13 @@ function renderVisitHistory() {
     return true;
   });
 
-  container.classList.remove("visit-history-dismissed");
-  linksEl.innerHTML = "";
+  container.innerHTML = "";
   trail.forEach((item, i) => {
     if (i > 0) {
       const arrow = document.createElement("span");
       arrow.className = "visit-history-arrow";
       arrow.textContent = "\\u2192";
-      linksEl.appendChild(arrow);
+      container.appendChild(arrow);
     }
 
     // Display in the currently active language when a translation exists.
@@ -86,18 +83,11 @@ function renderVisitHistory() {
     a.href = displayPath;
     a.className = "internal visit-history-link";
     a.textContent = displayTitle;
-    linksEl.appendChild(a);
+    container.appendChild(a);
   });
 
   trail.push({ path: currentPath, title: currentTitle, translationKey: currentTranslationKey });
   writeTrail(trail);
-
-  if (closeButton && !closeButton.dataset.wired) {
-    closeButton.dataset.wired = "true";
-    closeButton.addEventListener("click", () => {
-      container.classList.add("visit-history-dismissed");
-    });
-  }
 }
 
 document.addEventListener("nav", renderVisitHistory);
@@ -129,15 +119,7 @@ const VisitHistory: QuartzComponent = ({ fileData, allFiles }: QuartzComponentPr
       data-translation-key={translationKey}
       data-lang={lang}
       data-translation-map={JSON.stringify(translationMap)}
-    >
-      <div class="visit-history-links" id="visit-history-links"></div>
-      <button class="visit-history-close" id="visit-history-close" aria-label="Hide" type="button">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-          <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-        </svg>
-      </button>
-    </nav>
+    ></nav>
   )
 }
 
@@ -147,27 +129,17 @@ VisitHistory.css = `
 .visit-history {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
   gap: 0.4rem;
   margin-bottom: 1rem;
   font-family: var(--bodyFont);
   font-size: 0.9rem;
 }
 
-.visit-history:has(.visit-history-links:empty) {
+.visit-history:empty {
   display: none;
-}
-
-.visit-history.visit-history-dismissed {
-  display: none;
-}
-
-.visit-history-links {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.4rem;
 }
 
 .visit-history-link {
@@ -176,34 +148,6 @@ VisitHistory.css = `
 
 .visit-history-arrow {
   color: var(--gray);
-}
-
-.visit-history-close {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
-  padding: 0;
-  margin-left: 0.15rem;
-  border: none;
-  border-radius: 50%;
-  background: transparent;
-  color: var(--gray);
-  cursor: pointer;
-}
-
-.visit-history-close svg {
-  width: 0.8rem;
-  height: 0.8rem;
-}
-
-/* Only worth a dismiss control on narrow screens, where the trail takes up
-   proportionally more space above the headline. */
-@media (max-width: 800px) {
-  .visit-history-close {
-    display: inline-flex;
-  }
 }
 `
 
