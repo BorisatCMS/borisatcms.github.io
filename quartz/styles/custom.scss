@@ -265,7 +265,11 @@ footer ul {
     width: auto;
     height: auto;
     padding: 0;
-    z-index: 20;
+    // Above the mobile Table of Contents overlay (z-index: 30, see below) so
+    // the toggle button — which becomes the dismiss (✕) control once the
+    // overlay is open — stays visible and clickable on top of the blur
+    // instead of sitting underneath it.
+    z-index: 35;
   }
 
   & .sidebar.left .search-button,

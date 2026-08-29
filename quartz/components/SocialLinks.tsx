@@ -49,15 +49,9 @@ const LINKS = [
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.8" />
+        <circle cx="10.3" cy="15" r="2.3" stroke="currentColor" stroke-width="1.6" />
         <path
-          d="M14 8.3v6.4a2.7 2.7 0 1 1-2.7-2.7"
-          stroke="currentColor"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M14 8.3c.3 1.5 1.4 2.5 2.9 2.7"
+          d="M12.6 15V7h2c.2 1.9 1.5 3.3 3.4 3.6"
           stroke="currentColor"
           stroke-width="1.6"
           stroke-linecap="round"
