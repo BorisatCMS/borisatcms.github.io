@@ -27,7 +27,7 @@ translationKey: faq
 
 <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
   <input type="hidden" name="access_key" value="a7b1eb55-f110-4546-a107-ec609c905633" />
-  <input type="hidden" name="redirect" value="https://beaverstudio2007.github.io/portfolio/bedankt" />
+  <input type="hidden" name="redirect" value="https://borisatcms.com/portfolio/bedankt" />
   <input type="hidden" name="subject" value="Nieuwe contactaanvraag" />
   <input type="text" name="name" placeholder="Naam" />
   <input type="email" name="email" placeholder="E-mail*" required />

@@ -17,7 +17,7 @@ Het scherm is nog steeds hetzelfde, maar de telefoon vervult zijn allerbelangrij
 
 Als het beeld - het scherm van de telefoon - de vraag ‘wat gebeurt er?’ beantwoordt, dan beantwoordt het geluid de vraag ‘waar moeten we op letten en hoe aangenaam is het om de video te bekijken?’.
 ![[IMG20250520110040.jpg|298]]
-Mijn naam is Borys Popov, ik ben 18 jaar oud en ik doe dit sinds 2021 als hobby en voor mijn portfolio.
+Mijn naam is Borys Popov, ik ben 19 jaar oud en ik doe dit sinds 2021 als hobby en voor mijn portfolio.
 
 5 jaar?! Hoe lang is dat alweer? Hieronder vindt u mijn uitgebreidere biografie:
 [[Portfolio/Timeline]]

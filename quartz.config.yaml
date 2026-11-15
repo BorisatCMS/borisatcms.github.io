@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: borisatcms.github.io
+  baseUrl: borisatcms.com
   ignorePatterns:
     - private
     - templates
