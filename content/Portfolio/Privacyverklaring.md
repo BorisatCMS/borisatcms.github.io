@@ -15,7 +15,7 @@ Ik gebruik deze gegevens uitsluitend om te reageren op je vraag of aanvraag.
 
 ## Bewaartermijn
 
-Ik bewaren je gegevens niet langer dan nodig is om je vraag te beantwoorden.
+Ik bewaar je gegevens niet langer dan nodig is om je vraag te beantwoorden.
 
 ## Contact
 

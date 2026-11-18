@@ -11,7 +11,7 @@ Spoiler: **the past two years** my most important work has consisted of a **comb
 Namely from Boris at CMS, I'm happy to show you on the pages above exactly what each aspect involves.
 
 ## **2021 - Chose my own path**
-**11 August - Out of all the ICT tracks, one field kept coming back: editing.**
+**11 August - Out of all the IT tracks, one field kept coming back: editing.**
 That's where I discovered that I don't just want to understand technology, but also want to use it to **tell stories.** The start of [[Portfolio-en/Motion]]:
 
 **28 August - Time to turn my hobby into something concrete.**
