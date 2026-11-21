@@ -15,7 +15,7 @@ configuration:
   tickerItems:
     - Borys Popov
     - Adobe & Davinci Resolve
-    - Camera/Motion/Sound, Сombi-Possible
+    - Camera/Motion/Sound, Сombi-Possible ● 
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
