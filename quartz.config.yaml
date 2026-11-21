@@ -14,8 +14,8 @@ configuration:
     - .obsidian
   tickerItems:
     - Borys Popov
-    - Beheersen van Adobe en Davinci Resolve
-    - Camera, Motion of Sound, combinatie mogelijk
+    - Adobe & Davinci Resolve
+    - Camera/Motion/Sound, Сombi-Possible
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
