@@ -17,7 +17,7 @@ const Footer: QuartzComponent = ({ displayClass, fileData }: QuartzComponentProp
 
   return (
     <footer class={displayClass ?? ""}>
-      <p>&copy; 2026 Borys Popov. {copyright}</p>
+      <p>&copy; 2027 Borys Popov. {copyright}</p>
       <ul>
         <li>
           <a href={rightsLink.href}>{rightsLink.text}</a>

@@ -1,7 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 // Fallback text if `tickerItems` isn't set under `configuration:` in quartz.config.yaml.
-const DEFAULT_ITEMS = ["Borys Popov", "Beheersen van Adobe en Davinci Resolve", "Camera, Motion of Sound, combinatie mogelijk"]
+const DEFAULT_ITEMS = ["Borys Popov", "Adobe & Davinci Resolve", "Camera, Motion or Sound, Сombi-Possible"]
 
 // On wide screens, two copies of the text don't cover the full width, so once
 // both scroll past there's a visible gap before the loop restarts. This
